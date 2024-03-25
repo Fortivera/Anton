@@ -8,7 +8,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import GlassyComponent from "@/components/ui/glasscard";
 import Image from "next/image";
 
 export default function Home() {
@@ -29,11 +28,11 @@ export default function Home() {
           </div>
         </section>
         <section className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center py-12" id="projects">
-          <GlassyComponent />
           <Card className="max-w-96 bg-gray-800 shadow-lg shadow-gray-700">
             <CardHeader>
               <CardTitle>Project 1</CardTitle>
             </CardHeader>
+            <GlassyComponent />
             <CardContent>
               <CardDescription>
                 Project descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject description

@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 export default function Header() {
     return (
         <header className="h-16 w-full flex justify-center bg-[#9b9588] border-b-2 border-[#7b766b] top-0 fixed">
-            <nav className="flex justify-end ">
+            <nav className="flex justify-end gap">
 
                 <Button asChild className="bg-[#828888] ">
                     <Link href="/blog">Blog</Link>
