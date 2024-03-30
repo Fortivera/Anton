@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div className="min-h-screen w-full flex flex-col text-white text-base">
       <Header />
-      <main className="flex flex-col bg-[#131313] w-full mx-auto p-6 flex-grow">
+      <main className="flex flex-col bg-[#373636] w-full mx-auto p-6 flex-grow">
         <section id="about_me" className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2  justify-center items-center py-32  gap-x-8">
             <div className="flex flex-col justify-center items-center md:items-end  text-6xl">

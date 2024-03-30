@@ -29,11 +29,12 @@ export default function Home() {
           </div>
         </section>
         <section className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center py-12" id="projects">
-          <Card className="max-w-lg relative p-6 border rounded-lg bg-opacity-10 bg-[#9d94e9] border-[#60647872] bg-gradient-to-b from-[#35374366] to-[#24212b65]">
+          <GlassyComponent />
+          <Card className="relative p-6 border rounded-lg bg-opacity-10 bg-[#9d94e9] border-[#60647872] bg-gradient-to-b from-[#35374366] to-[#24212b65]">
             <CardHeader>
-              <CardTitle className="text-lg font-semibold text-[#D1D1D2]">Project 1</CardTitle>
+              <CardTitle className="">Project 1</CardTitle>
             </CardHeader>
-            <CardContent className="text-[#8b8f8f]">
+            <CardContent>
               <CardDescription>
                 Project descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject description
               </CardDescription>

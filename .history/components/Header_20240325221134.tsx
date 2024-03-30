@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 
 export default function Header() {
     return (
-        <header className="h-16 w-full flex justify-center border-b rounded-b-lg bg-opacity-10 bg-[#f5f5f5] border-[#23252c72] bg-gradient-to-b from-[#5b5b5b66] to-[#3d3c3c65] top-0 fixed">
+        <header className="h-16 w-full flex justify-center border-b  rounded-b bg-opacity-10 bg-[#9d94e9] border-[#60647872] bg-gradient-to-b from-[#35374366] to-[#24212b65] top-0 fixed">
             <nav className="flex justify-end ">
 
                 <Button asChild className="bg-[#828888] ">
