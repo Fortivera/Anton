@@ -24,7 +24,8 @@ export default function Home() {
             <p className="flex justify-center items-center w-[30rem]">Software Engineer</p>
           </div>
         </section>
-        <section className="hidden sm:grid grid-cols-1 gap-8 justify-items-center py-12" id="projects">
+
+        <section className="hidden-sm grid grid-cols-1 gap-8 justify-items-center py-12" id="projects">
           <div className="flex flex-row space-x-10">
             <Card className="max-w-lg relative p-6 border rounded-lg bg-opacity-10 bg-[#9d94e9] border-[#60647872] bg-gradient-to-b from-[#35374366] to-[#24212b65]">
               <CardHeader>
@@ -93,45 +94,6 @@ export default function Home() {
               </CardContent>
             </Card>
 
-          </div>
-        </section>
-        {/* mobile view */}
-        <section className="sm:hidden grid grid-cols-1 gap-8 justify-items-center py-12" id="projects">
-          <div className="flex flex-row space-x-10">
-            <Card className="max-w-lg relative p-6 border rounded-lg bg-opacity-10 bg-[#9d94e9] border-[#60647872] bg-gradient-to-b from-[#35374366] to-[#24212b65]">
-              <CardHeader>
-                <CardTitle className="text-lg font-semibold text-[#D1D1D2]">Graphalytics</CardTitle>
-              </CardHeader>
-              <CardContent className="text-[#8b8f8f]">
-                <CardDescription>
-                  Project descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject description
-                </CardDescription>
-              </CardContent>
-            </Card>
-          </div>
-          <div className="flex flex-col sm:flex-row space-x-10">
-            <Card className="max-w-lg relative p-6 border rounded-lg bg-opacity-10 bg-[#9d94e9] border-[#60647872] bg-gradient-to-b from-[#35374366] to-[#24212b65]">
-              <CardHeader>
-                <CardTitle className="text-lg font-semibold text-[#D1D1D2]">Graphalytics</CardTitle>
-              </CardHeader>
-              <CardContent className="text-[#8b8f8f]">
-                <CardDescription>
-                  Project descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject description
-                </CardDescription>
-              </CardContent>
-            </Card>
-          </div>
-          <div className="flex flex-col sm:flex-row space-x-10">
-            <Card className="max-w-lg relative p-6 border rounded-lg bg-opacity-10 bg-[#9d94e9] border-[#60647872] bg-gradient-to-b from-[#35374366] to-[#24212b65]">
-              <CardHeader>
-                <CardTitle className="text-lg font-semibold text-[#D1D1D2]">Graphalytics</CardTitle>
-              </CardHeader>
-              <CardContent className="text-[#8b8f8f]">
-                <CardDescription>
-                  Project descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject description
-                </CardDescription>
-              </CardContent>
-            </Card>
           </div>
         </section>
       </main>
