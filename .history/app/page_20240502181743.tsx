@@ -32,7 +32,10 @@ export default function Home() {
               </CardHeader>
               <CardContent className="text-[#8b8f8f] p-0">
                 <CardDescription>
+
                   <Image className="w-full" src="/graphalytics.png" alt={"Graphalytics"} width={900} height={900} />
+
+
                 </CardDescription>
               </CardContent>
             </Card>
@@ -51,11 +54,11 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row space-x-10">
             <Card className="max-w-lg h-96 relative p-6 border rounded-lg bg-opacity-10 bg-[#9d94e9] border-[#60647872] bg-gradient-to-b from-[#35374366] to-[#24212b65] overflow-y-auto">
               <CardHeader>
-                <CardTitle className="text-lg font-semibold text-[#D1D1D2]">YourEstate</CardTitle>
+                <CardTitle className="text-lg font-semibold text-[#D1D1D2]">Graphalytics</CardTitle>
               </CardHeader>
               <CardContent className="text-[#8b8f8f]">
                 <CardDescription>
-                  <Image className="w-full" src="/yourestate.png" alt={"YourEstate"} width={900} height={900} />
+                  Project descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject description
                 </CardDescription>
               </CardContent>
             </Card>

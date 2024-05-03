@@ -25,18 +25,18 @@ export default function Home() {
           </div>
         </section>
         <section className="hidden sm:grid grid-cols-1 gap-8 justify-items-center py-12" id="projects">
-          <div className="flex flex-row space-x-10">
-            <Card className="max-w-[51rem] relative p-6 border rounded-lg bg-opacity-10 bg-[#373757] border-[#8686872c] bg-gradient-to-b from-[#42424966] to-[#2d2c3165]">
+          <div className="flex flex-row space-x-10 ">
+            <Card className="max-w-lg h-[24rem] relative p-6 border rounded-lg bg-opacity-10 bg-[#2f2f8073] border-[#60647872] bg-gradient-to-b from-[#42424966] to-[#2d2c3165]">
               <CardHeader className="py-1">
                 <CardTitle className="text-lg font-semibold text-[#D1D1D2]">Graphalytics</CardTitle>
               </CardHeader>
-              <CardContent className="text-[#8b8f8f] p-0">
+              <CardContent className="text-[#8b8f8f]">
                 <CardDescription>
-                  <Image className="w-full" src="/graphalytics.png" alt={"Graphalytics"} width={900} height={900} />
+                  Project descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject description
                 </CardDescription>
               </CardContent>
             </Card>
-            <Card className="max-w-lg relative p-6 border rounded-lg bg-opacity-10 bg-[#9d94e9] hover:bg-[#24242779] border-[#60647872] hover:border-[#21222972] bg-gradient-to-b from-[#35374366] to-[#24212b65]">
+            <Card className="max-w-lg relative p-6 border rounded-lg bg-opacity-10 bg-[#9d94e9] border-[#60647872] bg-gradient-to-b from-[#35374366] to-[#24212b65]">
               <CardHeader>
                 <CardTitle className="text-lg font-semibold text-[#D1D1D2]">Details</CardTitle>
               </CardHeader>
@@ -51,11 +51,11 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row space-x-10">
             <Card className="max-w-lg h-96 relative p-6 border rounded-lg bg-opacity-10 bg-[#9d94e9] border-[#60647872] bg-gradient-to-b from-[#35374366] to-[#24212b65] overflow-y-auto">
               <CardHeader>
-                <CardTitle className="text-lg font-semibold text-[#D1D1D2]">YourEstate</CardTitle>
+                <CardTitle className="text-lg font-semibold text-[#D1D1D2]">Graphalytics</CardTitle>
               </CardHeader>
               <CardContent className="text-[#8b8f8f]">
                 <CardDescription>
-                  <Image className="w-full" src="/yourestate.png" alt={"YourEstate"} width={900} height={900} />
+                  Project descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject descriptionProject description
                 </CardDescription>
               </CardContent>
             </Card>
@@ -137,6 +137,6 @@ export default function Home() {
       </main>
 
 
-    </div >
+    </div>
   );
 }
