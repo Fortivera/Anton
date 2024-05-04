@@ -15,7 +15,6 @@ import graphalytics from "../public/graphalytics.png";
 import { useEffect, useState } from "react";
 import SocialLinks from "@/components/Footer";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 
 type ButtonStates = {
   btn1: boolean;
@@ -32,7 +31,6 @@ const initialState: ButtonStates = {
   btn5: false,
 }
 export default function Home() {
-  let router = useRouter()
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false)
   const [isHoveredPair1, setIsHoveredPair1] = useState<boolean>(false)
   const [isHoveredPair2, setIsHoveredPair2] = useState<boolean>(false)
@@ -43,7 +41,9 @@ export default function Home() {
   const handleButtonClick = async (buttonId: keyof ButtonStates) => {
     //revalidate path
     setButtonLoading(prev => ({ ...prev, [buttonId]: true }))
-    router.refresh()
+    setTimeout(() => {
+      setButtonLoading(prev => ({ ...prev, [buttonId]: false }))
+    }, 3000);
   }
 
   return (
