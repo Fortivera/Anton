@@ -12,7 +12,7 @@ import {
 import GlassyComponent from "@/components/ui/glasscard";
 import Image from "next/image";
 import graphalytics from "../public/graphalytics.png";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import SocialLinks from "@/components/Footer";
 import Link from "next/link";
 
@@ -40,10 +40,9 @@ export default function Home() {
 
   const handleButtonClick = async (buttonId: keyof ButtonStates) => {
     setButtonLoading(prev => ({ ...prev, [buttonId]: true }))
+
   }
-  useEffect(() => {
-    setButtonLoading(initialState);
-  }, [])
+
   return (
     <div className="min-h-screen w-full flex flex-col text-white text-base">
       {/* <Header /> */}

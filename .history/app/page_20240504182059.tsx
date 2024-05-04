@@ -40,6 +40,7 @@ export default function Home() {
 
   const handleButtonClick = async (buttonId: keyof ButtonStates) => {
     setButtonLoading(prev => ({ ...prev, [buttonId]: true }))
+
   }
   useEffect(() => {
     setButtonLoading(initialState);
