@@ -101,7 +101,9 @@ export default function Home() {
                     // disabled={buttonLoading.btn1}
                     type="button"
                     className="w-2/3 hover:bg-[#454166] bg-[#454166] shadow-lg">
+
                     <p>Visit</p>
+
                   </Button >
                 </Link>
 
@@ -135,20 +137,30 @@ export default function Home() {
               <div className="flex flex-row justify-center items-center w-full space-x-5 mx-auto pt-8 hover:bg-none">
                 <Link className="flex justify-center items-center w-1/3" href="https://yourestate.vercel.app/">
                   <Button
-                    // onClick={() => handleButtonClick('btn2')}
-                    // disabled={buttonLoading.btn2}
+                    onClick={() => handleButtonClick('btn2')}
+                    disabled={buttonLoading.btn2}
                     type="button"
                     className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
-                    <p>Visit</p>
+                    {buttonLoading.btn2 && <Loader2 className="inline mr-2 h-4 w-4 animate-spin" />}
+                    {buttonLoading.btn2 ?
+                      <p>Please wait</p>
+                      :
+                      <p>Visit</p>
+                    }
                   </Button >
                 </Link>
                 <Link className="flex justify-center items-center w-1/3" href="https://github.com/Fortivera/PropertyNextjs">
                   <Button
-                    // onClick={() => handleButtonClick('btn3')}
-                    // disabled={buttonLoading.btn3}
+                    onClick={() => handleButtonClick('btn3')}
+                    disabled={buttonLoading.btn3}
                     type="button"
                     className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
-                    <Image src="/githublight.svg" alt={"GitHub"} width={24} height={24} />
+                    {buttonLoading.btn3 && <Loader2 className="inline mr-2 h-4 w-4 animate-spin" />}
+                    {buttonLoading.btn3 ?
+                      <p>Please wait</p>
+                      :
+                      <Image src="/githublight.svg" alt={"GitHub"} width={24} height={24} />
+                    }
                   </Button >
                 </Link>
               </div>
@@ -201,20 +213,30 @@ export default function Home() {
               <div className="flex flex-row justify-center items-center w-full space-x-5 mx-auto pt-8 hover:bg-none">
                 <Link className="flex justify-center items-center w-1/3" href="https://yourestate.vercel.app/">
                   <Button
-                    // onClick={() => handleButtonClick('btn4')}
-                    // disabled={buttonLoading.btn4}
+                    onClick={() => handleButtonClick('btn4')}
+                    disabled={buttonLoading.btn4}
                     type="button"
                     className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
-                    <p>Visit</p>
+                    {buttonLoading.btn4 && <Loader2 className="inline mr-2 h-4 w-4 animate-spin" />}
+                    {buttonLoading.btn4 ?
+                      <p>Please wait</p>
+                      :
+                      <p>Visit</p>
+                    }
                   </Button >
                 </Link>
                 <Link className="flex justify-center items-center w-1/3" href="https://github.com/Fortivera/PropertyNextjs">
                   <Button
-                    // onClick={() => handleButtonClick('btn5')}
-                    // disabled={buttonLoading.btn5}
+                    onClick={() => handleButtonClick('btn5')}
+                    disabled={buttonLoading.btn5}
                     type="button"
                     className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
-                    <Image src="/githublight.svg" alt={"GitHub"} width={24} height={24} />
+                    {buttonLoading.btn5 && <Loader2 className="inline mr-2 h-4 w-4 animate-spin" />}
+                    {buttonLoading.btn5 ?
+                      <p>Please wait</p>
+                      :
+                      <Image src="/githublight.svg" alt={"GitHub"} width={24} height={24} />
+                    }
                   </Button >
                 </Link>
               </div>
@@ -246,15 +268,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex justify-center items-center w-full mx-auto pt-8 hover:bg-none">
-                  <Link className="flex justify-center items-center w-2/3" href="https://www.graphalytics.co/">
-                    <Button
-                      // onClick={() => handleButtonClick('btn1')}
-                      // disabled={buttonLoading.btn1}
-                      type="button"
-                      className="w-2/3 hover:bg-[#454166] bg-[#454166] shadow-lg">
-                      <p>Visit</p>
-                    </Button >
-                  </Link>
+                  <Button className="w-2/3 hover:bg-[#454166] bg-[#454166] shadow-lg">Visit</Button >
                 </div>
               </CardContent>
             </Card>
@@ -281,24 +295,10 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex flex-row justify-center items-center w-full space-x-5 mx-auto pt-8 hover:bg-none">
-                  <Link className="flex justify-center items-center w-1/3" href="https://yourestate.vercel.app/">
-                    <Button
-                      // onClick={() => handleButtonClick('btn4')}
-                      // disabled={buttonLoading.btn4}
-                      type="button"
-                      className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
-                      <p>Visit</p>
-                    </Button >
-                  </Link>
-                  <Link className="flex justify-center items-center w-1/3" href="https://github.com/Fortivera/PropertyNextjs">
-                    <Button
-                      // onClick={() => handleButtonClick('btn5')}
-                      // disabled={buttonLoading.btn5}
-                      type="button"
-                      className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
-                      <Image src="/githublight.svg" alt={"GitHub"} width={24} height={24} />
-                    </Button >
-                  </Link>
+                  <Button className="w-1/3 hover:bg-[#454166] bg-[#454166] shadow-lg">Visit</Button >
+                  <Button className="w-1/3 hover:bg-[#454166] bg-[#454166] shadow-lg">
+                    <Image src="/githublight.svg" alt={"GitHub"} width={24} height={24} />
+                  </Button >
                 </div>
               </CardContent>
             </Card>
@@ -325,24 +325,10 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex flex-row justify-center items-center w-full space-x-5 mx-auto pt-8 hover:bg-none">
-                  <Link className="flex justify-center items-center w-1/3" href="https://yourestate.vercel.app/">
-                    <Button
-                      // onClick={() => handleButtonClick('btn4')}
-                      // disabled={buttonLoading.btn4}
-                      type="button"
-                      className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
-                      <p>Visit</p>
-                    </Button >
-                  </Link>
-                  <Link className="flex justify-center items-center w-1/3" href="https://github.com/Fortivera/PropertyNextjs">
-                    <Button
-                      // onClick={() => handleButtonClick('btn5')}
-                      // disabled={buttonLoading.btn5}
-                      type="button"
-                      className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
-                      <Image src="/githublight.svg" alt={"GitHub"} width={24} height={24} />
-                    </Button >
-                  </Link>
+                  <Button className="w-1/3 hover:bg-[#454166] bg-[#454166] shadow-lg">Visit</Button >
+                  <Button className="w-1/3 hover:bg-[#454166] bg-[#454166] shadow-lg">
+                    <Image src="/githublight.svg" alt={"GitHub"} width={24} height={24} />
+                  </Button >
                 </div>
               </CardContent>
             </Card>
