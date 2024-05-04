@@ -41,11 +41,13 @@ export default function Home() {
   const handleButtonClick = async (buttonId: keyof ButtonStates) => {
     //revalidate path
     setButtonLoading(prev => ({ ...prev, [buttonId]: true }))
-    setTimeout(() => {
-      setButtonLoading(prev => ({ ...prev, [buttonId]: false }))
-    }, 3000);
   }
-
+  useEffect(() => {
+    return () => {
+      // Reset the state when the component unmounts
+      setButtonLoading(initialState);
+    };
+  }, [])
   return (
     <div className="min-h-screen w-full flex flex-col text-white text-base">
       {/* <Header /> */}

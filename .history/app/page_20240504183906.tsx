@@ -43,7 +43,7 @@ export default function Home() {
     setButtonLoading(prev => ({ ...prev, [buttonId]: true }))
     setTimeout(() => {
       setButtonLoading(prev => ({ ...prev, [buttonId]: false }))
-    }, 3000);
+    }, 2000);
   }
 
   return (
