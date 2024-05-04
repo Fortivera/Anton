@@ -42,7 +42,7 @@ export default function Home() {
               ${isHoveredPair1 ? "bg-[#24242779] border-[#21222972]" : "bg-[#9d94e9]"}`}
             >
               <div className="text-[#8b8f8f] p-0 shadow-sm shadow-[#4d4d4d]">
-                <Image src="/static/graphalytics.jpg" alt={"Graphalytics"} width={2000} height={900} />
+                <Image src="/static/graphalytics.jpg" alt={"Graphalytics"} width={900} height={900} />
               </div>
             </div>
             <Card

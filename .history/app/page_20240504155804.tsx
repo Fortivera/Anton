@@ -35,16 +35,16 @@ export default function Home() {
         {/* Desktop view */}
         <section className="hidden sm:grid grid-cols-1 gap-8 justify-items-center py-12 space-y-16" id="projects">
           <div className="flex flex-col space-y-5 xl:space-y-0 xl:flex-row xl:space-x-10">
-            <div
+            <Card
               onMouseEnter={() => setIsHoveredPair1(true)}
               onMouseLeave={() => setIsHoveredPair1(false)}
               className={`max-w-[51rem] relative p-6 border rounded-lg bg-opacity-10  border-[#60647872]  bg-gradient-to-b from-[#35374366] to-[#24212b65] 
               ${isHoveredPair1 ? "bg-[#24242779] border-[#21222972]" : "bg-[#9d94e9]"}`}
             >
-              <div className="text-[#8b8f8f] p-0 shadow-sm shadow-[#4d4d4d]">
-                <Image src="/static/graphalytics.jpg" alt={"Graphalytics"} width={2000} height={900} />
-              </div>
-            </div>
+              <CardContent className="text-[#8b8f8f] p-0 shadow-sm shadow-[#4d4d4d]">
+                <Image className="w-full" src={"/images/graphalyticas.png"} alt={"Graphalytics"} width={900} height={900} />
+              </CardContent>
+            </Card>
             <Card
               onMouseEnter={() => setIsHoveredPair1(true)}
               onMouseLeave={() => setIsHoveredPair1(false)}
@@ -73,7 +73,91 @@ export default function Home() {
               </div>
             </Card>
           </div>
-
+          <div className="flex flex-col space-y-5 xl:space-y-0 xl:flex-row xl:space-x-10">
+            <Card
+              onMouseEnter={() => setIsHoveredPair2(true)}
+              onMouseLeave={() => setIsHoveredPair2(false)}
+              className={`max-w-[51rem] max-h-[25rem] xl:max-h-none xl:max-w-lg relative p-6 border rounded-lg bg-opacity-10  border-[#60647872]  bg-gradient-to-b from-[#35374366] to-[#24212b65] 
+              ${isHoveredPair2 ? "bg-[#24242779] border-[#21222972]" : "bg-[#9d94e9]"}`}
+            >
+              <CardHeader className="pt-0">
+                <CardTitle className="text-lg font-semibold text-[#D1D1D2] pt-0">YourEstate</CardTitle>
+              </CardHeader>
+              <CardContent className="text-[#8b8f8f]">
+                <div className="text-base">
+                  <div className="flex flex-col space-y-5">
+                    <p>
+                      Tech Stack: Next.js 14, Typescript, Firebase, Stripe, D3.js
+                    </p>
+                    <ul className="list-disc pl-3 space-y-2">
+                      <li>Analytical charting library that avoids abstraction and gives ownership of the code</li>
+                      <li>Targets the users that need a dynamic and performant charting solution</li>
+                      <li>Has the most used chart types that can be colaged into a dashboard</li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+              <div className="flex flex-row justify-center items-center w-full space-x-5 mx-auto pt-8 hover:bg-none">
+                <Button className="w-1/3 hover:bg-[#454166] bg-[#454166] shadow-lg">Visit</Button >
+                <Button className="w-1/3 hover:bg-[#454166] bg-[#454166] shadow-lg">
+                  <Image src="/githublight.svg" alt={"GitHub"} width={24} height={24} />
+                </Button >
+              </div>
+            </Card>
+            <Card
+              onMouseEnter={() => setIsHoveredPair2(true)}
+              onMouseLeave={() => setIsHoveredPair2(false)}
+              className={`max-w-[51rem] relative p-6 border rounded-lg bg-opacity-10  border-[#60647872]  bg-gradient-to-b from-[#35374366] to-[#24212b65] 
+              ${isHoveredPair2 ? "bg-[#24242779] border-[#21222972]" : "bg-[#9d94e9]"}`}
+            >
+              <CardContent className="text-[#8b8f8f] p-0 shadow-sm shadow-[#4d4d4d]">
+                {/* <img src="/images/graphalytics.png" alt="graphalytics" /> */}
+                <Image className="w-full" src={"/images/yourestate.png"} alt={"YourEstate"} width={900} height={900} />
+              </CardContent>
+            </Card>
+          </div>
+          <div className="flex flex-col space-y-5 xl:space-y-0 xl:flex-row xl:space-x-10">
+            <Card
+              onMouseEnter={() => setIsHoveredPair3(true)}
+              onMouseLeave={() => setIsHoveredPair3(false)}
+              className={`max-w-[51rem] relative p-6 border rounded-lg bg-opacity-10  border-[#60647872]  bg-gradient-to-b from-[#35374366] to-[#24212b65] 
+              ${isHoveredPair3 ? "bg-[#24242779] border-[#21222972]" : "bg-[#9d94e9]"}`}
+            >
+              <CardContent className="text-[#8b8f8f] p-0 shadow-sm shadow-[#4d4d4d]">
+                <Image className="w-full" src="/images/yourestate.png" alt={"YourEstate"} width={900} height={900} />
+              </CardContent>
+            </Card>
+            <Card
+              onMouseEnter={() => setIsHoveredPair3(true)}
+              onMouseLeave={() => setIsHoveredPair3(false)}
+              className={`max-w-[51rem] max-h-[25rem] xl:max-h-none xl:max-w-lg relative p-6 border rounded-lg bg-opacity-10  border-[#60647872]  bg-gradient-to-b from-[#35374366] to-[#24212b65] 
+              ${isHoveredPair3 ? "bg-[#24242779] border-[#21222972]" : "bg-[#9d94e9]"}`}
+            >
+              <CardHeader className="pt-0">
+                <CardTitle className="text-lg font-semibold text-[#D1D1D2] pt-0">Justcookit</CardTitle>
+              </CardHeader>
+              <CardContent className="text-[#8b8f8f]">
+                <div className="text-base">
+                  <div className="flex flex-col space-y-5">
+                    <p>
+                      Tech Stack: Next.js 14, Typescript, Firebase, Stripe, D3.js
+                    </p>
+                    <ul className="list-disc pl-3 space-y-2">
+                      <li>Analytical charting library that avoids abstraction and gives ownership of the code</li>
+                      <li>Targets the users that need a dynamic and performant charting solution</li>
+                      <li>Has the most used chart types that can be colaged into a dashboard</li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+              <div className="flex flex-row justify-center items-center w-full space-x-5 mx-auto pt-8 hover:bg-none">
+                <Button className="w-1/3 hover:bg-[#454166] bg-[#454166] shadow-lg">Visit</Button >
+                <Button className="w-1/3 hover:bg-[#454166] bg-[#454166] shadow-lg">
+                  <Image src="/githublight.svg" alt={"GitHub"} width={24} height={24} />
+                </Button >
+              </div>
+            </Card>
+          </div>
 
         </section>
         {/* Mobile view */}

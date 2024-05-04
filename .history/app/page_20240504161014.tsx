@@ -41,9 +41,9 @@ export default function Home() {
               className={`max-w-[51rem] relative p-6 border rounded-lg bg-opacity-10  border-[#60647872]  bg-gradient-to-b from-[#35374366] to-[#24212b65] 
               ${isHoveredPair1 ? "bg-[#24242779] border-[#21222972]" : "bg-[#9d94e9]"}`}
             >
-              <div className="text-[#8b8f8f] p-0 shadow-sm shadow-[#4d4d4d]">
-                <Image src="/static/graphalytics.jpg" alt={"Graphalytics"} width={2000} height={900} />
-              </div>
+              <CardContent className="text-[#8b8f8f] p-0 shadow-sm shadow-[#4d4d4d]">
+                <Image src="/static/graphalytics.jpg" alt={"Graphalytics"} width={900} height={900} />
+              </CardContent>
             </div>
             <Card
               onMouseEnter={() => setIsHoveredPair1(true)}

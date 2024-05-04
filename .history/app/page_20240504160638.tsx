@@ -35,16 +35,16 @@ export default function Home() {
         {/* Desktop view */}
         <section className="hidden sm:grid grid-cols-1 gap-8 justify-items-center py-12 space-y-16" id="projects">
           <div className="flex flex-col space-y-5 xl:space-y-0 xl:flex-row xl:space-x-10">
-            <div
+            <Card
               onMouseEnter={() => setIsHoveredPair1(true)}
               onMouseLeave={() => setIsHoveredPair1(false)}
               className={`max-w-[51rem] relative p-6 border rounded-lg bg-opacity-10  border-[#60647872]  bg-gradient-to-b from-[#35374366] to-[#24212b65] 
               ${isHoveredPair1 ? "bg-[#24242779] border-[#21222972]" : "bg-[#9d94e9]"}`}
             >
-              <div className="text-[#8b8f8f] p-0 shadow-sm shadow-[#4d4d4d]">
-                <Image src="/static/graphalytics.jpg" alt={"Graphalytics"} width={2000} height={900} />
-              </div>
-            </div>
+              <CardContent className="text-[#8b8f8f] p-0 shadow-sm shadow-[#4d4d4d]">
+                <Image src="/static/graphalytics.png" alt={"Graphalytics"} width={900} height={900} />
+              </CardContent>
+            </Card>
             <Card
               onMouseEnter={() => setIsHoveredPair1(true)}
               onMouseLeave={() => setIsHoveredPair1(false)}
