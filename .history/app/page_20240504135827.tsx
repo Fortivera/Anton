@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/card"
 import GlassyComponent from "@/components/ui/glasscard";
 import Image from "next/image";
-import graphalytics from "../public/graphalytics.png";
+import Kek from "../public/graphalytics.png";
 import { useState } from "react";
 
 
@@ -42,7 +42,7 @@ export default function Home() {
               ${isHoveredPair1 ? "bg-[#24242779] border-[#21222972]" : "bg-[#9d94e9]"}`}
             >
               <CardContent className="text-[#8b8f8f] p-0 shadow-sm shadow-[#4d4d4d]">
-                <Image className="w-full" src={"/images/graphalytics.png"} alt={"Graphalytics"} width={900} height={900} />
+                <Image className="w-full" src={Kek} alt={"Graphalytics"} width={900} height={900} />
               </CardContent>
             </Card>
             <Card
@@ -111,7 +111,7 @@ export default function Home() {
               ${isHoveredPair2 ? "bg-[#24242779] border-[#21222972]" : "bg-[#9d94e9]"}`}
             >
               <CardContent className="text-[#8b8f8f] p-0 shadow-sm shadow-[#4d4d4d]">
-                <Image className="w-full" src="/images/yourestate.png" alt={"YourEstate"} width={900} height={900} />
+                <Image className="w-full" src="/yourestate.png" alt={"YourEstate"} width={900} height={900} />
               </CardContent>
             </Card>
           </div>
@@ -123,7 +123,7 @@ export default function Home() {
               ${isHoveredPair3 ? "bg-[#24242779] border-[#21222972]" : "bg-[#9d94e9]"}`}
             >
               <CardContent className="text-[#8b8f8f] p-0 shadow-sm shadow-[#4d4d4d]">
-                <Image className="w-full" src="/images/yourestate.png" alt={"YourEstate"} width={900} height={900} />
+                <Image className="w-full" src="/yourestate.png" alt={"YourEstate"} width={900} height={900} />
               </CardContent>
             </Card>
             <Card

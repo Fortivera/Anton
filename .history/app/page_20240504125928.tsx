@@ -12,7 +12,6 @@ import {
 } from "@/components/ui/card"
 import GlassyComponent from "@/components/ui/glasscard";
 import Image from "next/image";
-import graphalytics from "../public/graphalytics.png";
 import { useState } from "react";
 
 
@@ -42,13 +41,13 @@ export default function Home() {
               ${isHoveredPair1 ? "bg-[#24242779] border-[#21222972]" : "bg-[#9d94e9]"}`}
             >
               <CardContent className="text-[#8b8f8f] p-0 shadow-sm shadow-[#4d4d4d]">
-                <Image className="w-full" src={"/images/graphalytics.png"} alt={"Graphalytics"} width={900} height={900} />
+                <Image className="w-full" src="/graphalytics.png" alt={"YourEstate"} width={900} height={900} />
               </CardContent>
             </Card>
             <Card
               onMouseEnter={() => setIsHoveredPair1(true)}
               onMouseLeave={() => setIsHoveredPair1(false)}
-              className={`max-w-[51rem] max-h-[25rem] xl:max-h-none xl:max-w-lg relative p-6 border rounded-lg bg-opacity-10  border-[#60647872]  bg-gradient-to-b from-[#35374366] to-[#24212b65] 
+              className={`max-w-[51rem] max-h-96 xl:max-h-none xl:max-w-lg relative p-6 border rounded-lg bg-opacity-10  border-[#60647872]  bg-gradient-to-b from-[#35374366] to-[#24212b65] 
               ${isHoveredPair1 ? "bg-[#24242779] border-[#21222972]" : "bg-[#9d94e9]"}`}
             >
               <CardHeader className="pt-0">
@@ -77,7 +76,7 @@ export default function Home() {
             <Card
               onMouseEnter={() => setIsHoveredPair2(true)}
               onMouseLeave={() => setIsHoveredPair2(false)}
-              className={`max-w-[51rem] max-h-[25rem] xl:max-h-none xl:max-w-lg relative p-6 border rounded-lg bg-opacity-10  border-[#60647872]  bg-gradient-to-b from-[#35374366] to-[#24212b65] 
+              className={`max-w-[51rem] max-h-96 xl:max-h-none xl:max-w-lg relative p-6 border rounded-lg bg-opacity-10  border-[#60647872]  bg-gradient-to-b from-[#35374366] to-[#24212b65] 
               ${isHoveredPair2 ? "bg-[#24242779] border-[#21222972]" : "bg-[#9d94e9]"}`}
             >
               <CardHeader className="pt-0">
@@ -97,11 +96,8 @@ export default function Home() {
                   </div>
                 </div>
               </CardContent>
-              <div className="flex flex-row justify-center items-center w-full space-x-5 mx-auto pt-8 hover:bg-none">
-                <Button className="w-1/3 hover:bg-[#454166] bg-[#454166] shadow-lg">Visit</Button >
-                <Button className="w-1/3 hover:bg-[#454166] bg-[#454166] shadow-lg">
-                  <Image src="/githublight.svg" alt={"GitHub"} width={24} height={24} />
-                </Button >
+              <div className="flex justify-center items-center w-full mx-auto pt-8 hover:bg-none">
+                <Button className="w-2/3 hover:bg-[#454166] bg-[#454166] shadow-lg">Visit</Button >
               </div>
             </Card>
             <Card
@@ -111,7 +107,7 @@ export default function Home() {
               ${isHoveredPair2 ? "bg-[#24242779] border-[#21222972]" : "bg-[#9d94e9]"}`}
             >
               <CardContent className="text-[#8b8f8f] p-0 shadow-sm shadow-[#4d4d4d]">
-                <Image className="w-full" src="/images/yourestate.png" alt={"YourEstate"} width={900} height={900} />
+                <Image className="w-full" src="/yourestate.png" alt={"YourEstate"} width={900} height={900} />
               </CardContent>
             </Card>
           </div>
@@ -123,13 +119,13 @@ export default function Home() {
               ${isHoveredPair3 ? "bg-[#24242779] border-[#21222972]" : "bg-[#9d94e9]"}`}
             >
               <CardContent className="text-[#8b8f8f] p-0 shadow-sm shadow-[#4d4d4d]">
-                <Image className="w-full" src="/images/yourestate.png" alt={"YourEstate"} width={900} height={900} />
+                <Image className="w-full" src="/yourestate.png" alt={"YourEstate"} width={900} height={900} />
               </CardContent>
             </Card>
             <Card
               onMouseEnter={() => setIsHoveredPair3(true)}
               onMouseLeave={() => setIsHoveredPair3(false)}
-              className={`max-w-[51rem] max-h-[25rem] xl:max-h-none xl:max-w-lg relative p-6 border rounded-lg bg-opacity-10  border-[#60647872]  bg-gradient-to-b from-[#35374366] to-[#24212b65] 
+              className={`max-w-[51rem] max-h-96 xl:max-h-none xl:max-w-lg relative p-6 border rounded-lg bg-opacity-10  border-[#60647872]  bg-gradient-to-b from-[#35374366] to-[#24212b65] 
               ${isHoveredPair3 ? "bg-[#24242779] border-[#21222972]" : "bg-[#9d94e9]"}`}
             >
               <CardHeader className="pt-0">
@@ -149,11 +145,8 @@ export default function Home() {
                   </div>
                 </div>
               </CardContent>
-              <div className="flex flex-row justify-center items-center w-full space-x-5 mx-auto pt-8 hover:bg-none">
-                <Button className="w-1/3 hover:bg-[#454166] bg-[#454166] shadow-lg">Visit</Button >
-                <Button className="w-1/3 hover:bg-[#454166] bg-[#454166] shadow-lg">
-                  <Image src="/githublight.svg" alt={"GitHub"} width={24} height={24} />
-                </Button >
+              <div className="flex justify-center items-center w-full mx-auto pt-8 hover:bg-none">
+                <Button className="w-2/3 hover:bg-[#454166] bg-[#454166] shadow-lg">Visit</Button >
               </div>
             </Card>
           </div>
@@ -184,6 +177,9 @@ export default function Home() {
                 </div>
                 <div className="flex justify-center items-center w-full mx-auto pt-8 hover:bg-none">
                   <Button className="w-2/3 hover:bg-[#454166] bg-[#454166] shadow-lg">Visit</Button >
+                  <Button className="w-2/3 hover:bg-[#454166] bg-[#454166] shadow-lg">
+                    <Image className="" src="/githublight.svg" alt={"GitHub"} width={24} height={24} />
+                  </Button >
                 </div>
               </CardContent>
             </Card>
@@ -209,11 +205,8 @@ export default function Home() {
                     </ul>
                   </div>
                 </div>
-                <div className="flex flex-row justify-center items-center w-full space-x-5 mx-auto pt-8 hover:bg-none">
-                  <Button className="w-1/3 hover:bg-[#454166] bg-[#454166] shadow-lg">Visit</Button >
-                  <Button className="w-1/3 hover:bg-[#454166] bg-[#454166] shadow-lg">
-                    <Image src="/githublight.svg" alt={"GitHub"} width={24} height={24} />
-                  </Button >
+                <div className="flex justify-center items-center w-full mx-auto pt-8 hover:bg-none">
+                  <Button className="w-2/3 hover:bg-[#454166] bg-[#454166] shadow-lg">Visit</Button >
                 </div>
               </CardContent>
             </Card>
@@ -239,11 +232,8 @@ export default function Home() {
                     </ul>
                   </div>
                 </div>
-                <div className="flex flex-row justify-center items-center w-full space-x-5 mx-auto pt-8 hover:bg-none">
-                  <Button className="w-1/3 hover:bg-[#454166] bg-[#454166] shadow-lg">Visit</Button >
-                  <Button className="w-1/3 hover:bg-[#454166] bg-[#454166] shadow-lg">
-                    <Image src="/githublight.svg" alt={"GitHub"} width={24} height={24} />
-                  </Button >
+                <div className="flex justify-center items-center w-full mx-auto pt-8 hover:bg-none">
+                  <Button className="w-2/3 hover:bg-[#454166] bg-[#454166] shadow-lg">Visit</Button >
                 </div>
               </CardContent>
             </Card>
