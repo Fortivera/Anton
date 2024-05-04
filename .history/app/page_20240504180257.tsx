@@ -36,10 +36,10 @@ export default function Home() {
   const [isHoveredPair2, setIsHoveredPair2] = useState<boolean>(false)
   const [isHoveredPair3, setIsHoveredPair3] = useState<boolean>(false)
 
-  const [buttonLoading, setButtonLoading] = useState<ButtonStates>(initialState);
+  const [buttonLoading, setButtonState] = useState<ButtonStates>(initialState);
 
   const handleButtonClick = async (buttonId: keyof ButtonStates) => {
-    setButtonLoading(prev => ({ ...prev, [buttonId]: true }))
+    setButtonState(prev => ({ ...prev, [buttonId]: true }))
   }
 
   return (
@@ -94,11 +94,11 @@ export default function Home() {
                 <Link className="flex justify-center items-center w-2/3" href="https://www.graphalytics.co/">
                   <Button
                     onClick={() => handleButtonClick('btn1')}
-                    disabled={buttonLoading.btn1}
+                    disabled={buttonState.btn1}
                     type="button"
                     className="w-2/3 hover:bg-[#454166] bg-[#454166] shadow-lg">
-                    {buttonLoading.btn1 && <Loader2 className="inline mr-2 h-4 w-4 animate-spin" />}
-                    {buttonLoading.btn1 ?
+                    {buttonState.btn1 && <Loader2 className="inline mr-2 h-4 w-4 animate-spin" />}
+                    {buttonState.btn1 ?
                       <p>Please wait</p>
                       :
                       <p>Visit</p>
@@ -137,11 +137,11 @@ export default function Home() {
                 <Link className="flex justify-center items-center w-1/3" href="https://yourestate.vercel.app/">
                   <Button
                     onClick={() => handleButtonClick('btn2')}
-                    disabled={buttonLoading.btn2}
+                    disabled={buttonState.btn2}
                     type="button"
                     className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
-                    {buttonLoading.btn2 && <Loader2 className="inline mr-2 h-4 w-4 animate-spin" />}
-                    {buttonLoading.btn2 ?
+                    {buttonState.btn2 && <Loader2 className="inline mr-2 h-4 w-4 animate-spin" />}
+                    {buttonState.btn2 ?
                       <p>Please wait</p>
                       :
                       <p>Visit</p>
@@ -150,12 +150,12 @@ export default function Home() {
                 </Link>
                 <Link className="flex justify-center items-center w-1/3" href="https://github.com/Fortivera/PropertyNextjs">
                   <Button
-                    onClick={() => handleButtonClick('btn3')}
-                    disabled={buttonLoading.btn3}
+                    onClick={() => handleButtonClick('btn1')}
+                    disabled={buttonState.btn3}
                     type="button"
                     className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
-                    {buttonLoading.btn3 && <Loader2 className="inline mr-2 h-4 w-4 animate-spin" />}
-                    {buttonLoading.btn3 ?
+                    {buttonState.btn3 && <Loader2 className="inline mr-2 h-4 w-4 animate-spin" />}
+                    {buttonState.btn3 ?
                       <p>Please wait</p>
                       :
                       <Image src="/githublight.svg" alt={"GitHub"} width={24} height={24} />
@@ -210,34 +210,10 @@ export default function Home() {
                 </div>
               </CardContent>
               <div className="flex flex-row justify-center items-center w-full space-x-5 mx-auto pt-8 hover:bg-none">
-                <Link className="flex justify-center items-center w-1/3" href="https://yourestate.vercel.app/">
-                  <Button
-                    onClick={() => handleButtonClick('btn4')}
-                    disabled={buttonLoading.btn4}
-                    type="button"
-                    className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
-                    {buttonLoading.btn4 && <Loader2 className="inline mr-2 h-4 w-4 animate-spin" />}
-                    {buttonLoading.btn4 ?
-                      <p>Please wait</p>
-                      :
-                      <p>Visit</p>
-                    }
-                  </Button >
-                </Link>
-                <Link className="flex justify-center items-center w-1/3" href="https://github.com/Fortivera/PropertyNextjs">
-                  <Button
-                    onClick={() => handleButtonClick('btn5')}
-                    disabled={buttonLoading.btn5}
-                    type="button"
-                    className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
-                    {buttonLoading.btn5 && <Loader2 className="inline mr-2 h-4 w-4 animate-spin" />}
-                    {buttonLoading.btn5 ?
-                      <p>Please wait</p>
-                      :
-                      <Image src="/githublight.svg" alt={"GitHub"} width={24} height={24} />
-                    }
-                  </Button >
-                </Link>
+                <Button className="w-1/3 hover:bg-[#454166] bg-[#454166] shadow-lg">Visit</Button >
+                <Button className="w-1/3 hover:bg-[#454166] bg-[#454166] shadow-lg">
+                  <Image src="/githublight.svg" alt={"GitHub"} width={24} height={24} />
+                </Button >
               </div>
             </Card>
           </div>

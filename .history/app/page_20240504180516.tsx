@@ -150,7 +150,7 @@ export default function Home() {
                 </Link>
                 <Link className="flex justify-center items-center w-1/3" href="https://github.com/Fortivera/PropertyNextjs">
                   <Button
-                    onClick={() => handleButtonClick('btn3')}
+                    onClick={() => handleButtonClick('btn1')}
                     disabled={buttonLoading.btn3}
                     type="button"
                     className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
@@ -212,7 +212,7 @@ export default function Home() {
               <div className="flex flex-row justify-center items-center w-full space-x-5 mx-auto pt-8 hover:bg-none">
                 <Link className="flex justify-center items-center w-1/3" href="https://yourestate.vercel.app/">
                   <Button
-                    onClick={() => handleButtonClick('btn4')}
+                    onClick={() => handleButtonClick('btn2')}
                     disabled={buttonLoading.btn4}
                     type="button"
                     className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
@@ -226,7 +226,7 @@ export default function Home() {
                 </Link>
                 <Link className="flex justify-center items-center w-1/3" href="https://github.com/Fortivera/PropertyNextjs">
                   <Button
-                    onClick={() => handleButtonClick('btn5')}
+                    onClick={() => handleButtonClick('btn1')}
                     disabled={buttonLoading.btn5}
                     type="button"
                     className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">

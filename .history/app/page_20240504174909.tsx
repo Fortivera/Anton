@@ -16,32 +16,20 @@ import { useState } from "react";
 import SocialLinks from "@/components/Footer";
 import Link from "next/link";
 
-type ButtonStates = {
-  btn1: boolean;
-  btn2: boolean;
-  btn3: boolean;
-  btn4: boolean;
-  btn5: boolean;
-}
-const initialState: ButtonStates = {
-  btn1: false,
-  btn2: false,
-  btn3: false,
-  btn4: false,
-  btn5: false,
-}
+
 export default function Home() {
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false)
+  const [buttonState, setButtonState] = useState({
+    visitgrapha: false,
+    visityour: false,
+    githubyour: false,
+    visitjustcook: false,
+    githubjustcook: false,
+  });
+
   const [isHoveredPair1, setIsHoveredPair1] = useState<boolean>(false)
   const [isHoveredPair2, setIsHoveredPair2] = useState<boolean>(false)
   const [isHoveredPair3, setIsHoveredPair3] = useState<boolean>(false)
-
-  const [buttonLoading, setButtonLoading] = useState<ButtonStates>(initialState);
-
-  const handleButtonClick = async (buttonId: keyof ButtonStates) => {
-    setButtonLoading(prev => ({ ...prev, [buttonId]: true }))
-  }
-
   return (
     <div className="min-h-screen w-full flex flex-col text-white text-base">
       {/* <Header /> */}
@@ -93,12 +81,12 @@ export default function Home() {
               <div className="flex justify-center items-center w-full mx-auto pt-8 hover:bg-none">
                 <Link className="flex justify-center items-center w-2/3" href="https://www.graphalytics.co/">
                   <Button
-                    onClick={() => handleButtonClick('btn1')}
-                    disabled={buttonLoading.btn1}
+                    onClick={() => setIsSubmitting(true)}
                     type="button"
+                    disabled={isSubmitting}
                     className="w-2/3 hover:bg-[#454166] bg-[#454166] shadow-lg">
-                    {buttonLoading.btn1 && <Loader2 className="inline mr-2 h-4 w-4 animate-spin" />}
-                    {buttonLoading.btn1 ?
+                    {isSubmitting && <Loader2 className="inline mr-2 h-4 w-4 animate-spin" />}
+                    {isSubmitting ?
                       <p>Please wait</p>
                       :
                       <p>Visit</p>
@@ -134,34 +122,10 @@ export default function Home() {
                 </div>
               </CardContent>
               <div className="flex flex-row justify-center items-center w-full space-x-5 mx-auto pt-8 hover:bg-none">
-                <Link className="flex justify-center items-center w-1/3" href="https://yourestate.vercel.app/">
-                  <Button
-                    onClick={() => handleButtonClick('btn2')}
-                    disabled={buttonLoading.btn2}
-                    type="button"
-                    className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
-                    {buttonLoading.btn2 && <Loader2 className="inline mr-2 h-4 w-4 animate-spin" />}
-                    {buttonLoading.btn2 ?
-                      <p>Please wait</p>
-                      :
-                      <p>Visit</p>
-                    }
-                  </Button >
-                </Link>
-                <Link className="flex justify-center items-center w-1/3" href="https://github.com/Fortivera/PropertyNextjs">
-                  <Button
-                    onClick={() => handleButtonClick('btn3')}
-                    disabled={buttonLoading.btn3}
-                    type="button"
-                    className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
-                    {buttonLoading.btn3 && <Loader2 className="inline mr-2 h-4 w-4 animate-spin" />}
-                    {buttonLoading.btn3 ?
-                      <p>Please wait</p>
-                      :
-                      <Image src="/githublight.svg" alt={"GitHub"} width={24} height={24} />
-                    }
-                  </Button >
-                </Link>
+                <Button className="w-1/3 hover:bg-[#454166] bg-[#454166] shadow-lg">Visit</Button >
+                <Button className="w-1/3 hover:bg-[#454166] bg-[#454166] shadow-lg">
+                  <Image src="/githublight.svg" alt={"GitHub"} width={24} height={24} />
+                </Button >
               </div>
             </Card>
             <Card
@@ -210,34 +174,10 @@ export default function Home() {
                 </div>
               </CardContent>
               <div className="flex flex-row justify-center items-center w-full space-x-5 mx-auto pt-8 hover:bg-none">
-                <Link className="flex justify-center items-center w-1/3" href="https://yourestate.vercel.app/">
-                  <Button
-                    onClick={() => handleButtonClick('btn4')}
-                    disabled={buttonLoading.btn4}
-                    type="button"
-                    className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
-                    {buttonLoading.btn4 && <Loader2 className="inline mr-2 h-4 w-4 animate-spin" />}
-                    {buttonLoading.btn4 ?
-                      <p>Please wait</p>
-                      :
-                      <p>Visit</p>
-                    }
-                  </Button >
-                </Link>
-                <Link className="flex justify-center items-center w-1/3" href="https://github.com/Fortivera/PropertyNextjs">
-                  <Button
-                    onClick={() => handleButtonClick('btn5')}
-                    disabled={buttonLoading.btn5}
-                    type="button"
-                    className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
-                    {buttonLoading.btn5 && <Loader2 className="inline mr-2 h-4 w-4 animate-spin" />}
-                    {buttonLoading.btn5 ?
-                      <p>Please wait</p>
-                      :
-                      <Image src="/githublight.svg" alt={"GitHub"} width={24} height={24} />
-                    }
-                  </Button >
-                </Link>
+                <Button className="w-1/3 hover:bg-[#454166] bg-[#454166] shadow-lg">Visit</Button >
+                <Button className="w-1/3 hover:bg-[#454166] bg-[#454166] shadow-lg">
+                  <Image src="/githublight.svg" alt={"GitHub"} width={24} height={24} />
+                </Button >
               </div>
             </Card>
           </div>

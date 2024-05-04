@@ -11,7 +11,7 @@ export default function SocialLinks() {
             <Link href={"https://github.com/Fortivera"}>
                 <Image src="/github.svg" alt={"GitHub"} width={24} height={24} />
             </Link>
-            <Link href={"https://www.linkedin.com/in/anton-strelkovskyy"}>
+            <Link href={""}>
                 <Image src="/linkedin.svg" alt={"Linkedin"} width={24} height={24} />
             </Link>
         </footer>
