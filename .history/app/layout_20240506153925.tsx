@@ -1,9 +1,14 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Figtree } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils"
 
 const inter = Inter({
+  subsets: ["latin"],
+  display: 'swap',
+});
+const figtree = Figtree({
   subsets: ["latin"],
   display: 'swap',
 });

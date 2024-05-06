@@ -20,6 +20,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+        </style>
+      </head>
       <body className={cn(
         "min-h-screen bg-[#c2b3b3] antialiased",
         inter.className

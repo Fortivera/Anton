@@ -1,7 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+</style>
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -33,3 +35,9 @@ body {
   }
 }
 
+.figtree-normal {
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}

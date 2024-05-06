@@ -9,10 +9,13 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
+import GlassyComponent from "@/components/ui/glasscard";
 import Image from "next/image";
-import { useState } from "react";
+import graphalytics from "../public/graphalytics.png";
+import { useEffect, useState } from "react";
 import SocialLinks from "@/components/Footer";
 import Link from "next/link";
+
 
 // type ButtonStates = {
 //   btn1: boolean;
@@ -49,11 +52,11 @@ export default function Home() {
       <main className="flex flex-col bg-[#131313] w-full mx-auto p-6 flex-grow">
         <section id="about_me" className="container mx-auto px-4">
           <div className="flex flex-col items-center space-y-1">
-            <p className="flex flex-col sm:flex-row justify-center items-center text-center text-4xl pt-5 sm:pt-10 pb-5 font-medium">Anton Strelkovkyy</p>
+            <p className="text-4xl pt-10 pb-5 font-medium">Anton Strelkovkyy</p>
             {/* <div className="flex justify-center items-center rounded-full border border-white h-20 w-20">pic</div> */}
             <SocialLinks />
-            <p className={"flex justify-center items-center text-center max-w-[30rem] text-lg text-neutral-400 text"}>&quot;Problems exist to practise critical thinking, creating elegant solutions in the process.&quot;</p>
-            <p className="flex justify-center items-center text-center max-w-[35rem] text-xl pt-5">Software developer, Saas and business solutions. Passionate about technology and its impact on the world</p>
+            <p className="flex justify-center items-center text-center w-[30rem] text-lg text-neutral-400">&quot;Problems exist to practise critical thinking, creating elegant solutions in the process.&quot;</p>
+            <p className="flex justify-center items-center text-center w-[30rem] text-xl pt-5">Software developer, Saas and business solutions. Passionate about technology and its impact on the world</p>
           </div>
         </section>
         {/* Desktop view */}
