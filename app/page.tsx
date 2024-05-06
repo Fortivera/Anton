@@ -66,7 +66,7 @@ export default function Home() {
               ${isHoveredPair1 ? "bg-[#24242779] border-[#21222972]" : "bg-[#9d94e9]"}`}
             >
               <CardContent className="text-[#8b8f8f] p-0 shadow-sm shadow-[#4d4d4d]">
-                <Image className="w-full" src={"/graphalytics.png"} alt={"Graphalytics"} width={1500} height={900} />
+                <Image className="w-full" src={"/graphalytics.png"} alt={"Graphalytics"} width={1500} height={1500} />
               </CardContent>
             </Card>
             <Card
@@ -82,12 +82,12 @@ export default function Home() {
                 <div className="text-base">
                   <div className="flex flex-col space-y-5">
                     <p>
-                      Tech Stack: Next.js 14, Typescript, Firebase, Stripe, D3.js
+                      Tech Stack: Typescript, Next.js 14, Firebase, Stripe, D3.js, NoSQL
                     </p>
                     <ul className="list-disc pl-3 space-y-2">
-                      <li>Analytical charting library that avoids abstraction and gives ownership of the code</li>
-                      <li>Targets the users that need a dynamic and performant charting solution</li>
-                      <li>Has the most used chart types that can be colaged into a dashboard</li>
+                      <li>A charting library that minimizes abstraction, empowering users with full control over their code</li>
+                      <li>Designed for users seeking a dynamic and high-performance charting solution</li>
+                      <li>Includes the most popular chart types, seamlessly integrable into an analytics dashboard</li>
                     </ul>
                   </div>
                 </div>
@@ -119,12 +119,12 @@ export default function Home() {
                 <div className="text-base">
                   <div className="flex flex-col space-y-5">
                     <p>
-                      Tech Stack: Next.js 14, Typescript, Firebase, Stripe, D3.js
+                      Tech Stack: Typescript, C#, Next.js 14, Azure, D3.js, SQL
                     </p>
                     <ul className="list-disc pl-3 space-y-2">
-                      <li>Analytical charting library that avoids abstraction and gives ownership of the code</li>
-                      <li>Targets the users that need a dynamic and performant charting solution</li>
-                      <li>Has the most used chart types that can be colaged into a dashboard</li>
+                      <li>A modular real estate solution that simplifies property management</li>
+                      <li>Designed to integrate data analytics and visualization capabilities within a single platform</li>
+                      <li>Scalable and user-friendly, suitable for property owners at all experience levels</li>
                     </ul>
                   </div>
                 </div>
@@ -157,26 +157,26 @@ export default function Home() {
               ${isHoveredPair2 ? "bg-[#24242779] border-[#21222972]" : "bg-[#9d94e9]"}`}
             >
               <CardContent className="text-[#8b8f8f] p-0 shadow-sm shadow-[#4d4d4d]">
-                <Image className="w-full" src={"/yourestate.png"} alt={"YourEstate"} width={1500} height={900} />
+                <Image className="w-full" src={"/yourestate.png"} alt={"YourEstate"} width={1500} height={1500} />
               </CardContent>
             </Card>
           </div>
-          <div className="flex flex-col space-y-5 xl:space-y-0 xl:flex-row xl:space-x-10">
+          <div className="flex flex-col xl:space-y-0 xl:flex-row xl:space-x-10">
             <Card
-              onMouseEnter={() => setIsHoveredPair3(true)}
-              onMouseLeave={() => setIsHoveredPair3(false)}
-              className={`max-w-[51rem] relative p-6 border rounded-lg bg-opacity-10  border-[#60647872]  bg-gradient-to-b from-[#35374366] to-[#24212b65] 
-              ${isHoveredPair3 ? "bg-[#24242779] border-[#21222972]" : "bg-[#9d94e9]"}`}
+              onMouseEnter={() => setIsHoveredPair2(true)}
+              onMouseLeave={() => setIsHoveredPair2(false)}
+              className={`max-w-[51rem] relative p-6 border rounded-lg bg-opacity-10  border-[#60647872]  bg-gradient-to-b from-[#35374366] to-[#24212b65] mb-5 xl:mb-0
+              ${isHoveredPair2 ? "bg-[#24242779] border-[#21222972]" : "bg-[#9d94e9]"}`}
             >
               <CardContent className="text-[#8b8f8f] p-0 shadow-sm shadow-[#4d4d4d]">
-                <Image className="w-full" src={"/yourestate.png"} alt={"YourEstate"} width={1500} height={900} />
+                <Image className="w-full" src={"/justcookit.png"} alt={"Justcookit"} width={1500} height={1500} />
               </CardContent>
             </Card>
             <Card
-              onMouseEnter={() => setIsHoveredPair3(true)}
-              onMouseLeave={() => setIsHoveredPair3(false)}
+              onMouseEnter={() => setIsHoveredPair2(true)}
+              onMouseLeave={() => setIsHoveredPair2(false)}
               className={`max-w-[51rem] max-h-[25rem] xl:max-h-none xl:max-w-lg relative p-6 border rounded-lg bg-opacity-10  border-[#60647872]  bg-gradient-to-b from-[#35374366] to-[#24212b65] 
-              ${isHoveredPair3 ? "bg-[#24242779] border-[#21222972]" : "bg-[#9d94e9]"}`}
+              ${isHoveredPair2 ? "bg-[#24242779] border-[#21222972]" : "bg-[#9d94e9]"}`}
             >
               <CardHeader className="pt-0">
                 <CardTitle className="text-lg font-semibold text-[#D1D1D2] pt-0">Justcookit</CardTitle>
@@ -185,30 +185,30 @@ export default function Home() {
                 <div className="text-base">
                   <div className="flex flex-col space-y-5">
                     <p>
-                      Tech Stack: Next.js 14, Typescript, Firebase, Stripe, D3.js
+                      Tech Stack: Typescript, C#, Next.js 14, Azure, D3.js, SQL
                     </p>
                     <ul className="list-disc pl-3 space-y-2">
-                      <li>Analytical charting library that avoids abstraction and gives ownership of the code</li>
-                      <li>Targets the users that need a dynamic and performant charting solution</li>
-                      <li>Has the most used chart types that can be colaged into a dashboard</li>
+                      <li>A modular real estate solution that simplifies property management</li>
+                      <li>Designed to integrate data analytics and visualization capabilities within a single platform</li>
+                      <li>Scalable and user-friendly, suitable for property owners at all experience levels</li>
                     </ul>
                   </div>
                 </div>
               </CardContent>
               <div className="flex flex-row justify-center items-center w-full space-x-5 mx-auto pt-8 hover:bg-none">
-                <Link className="flex justify-center items-center w-1/3" href="https://yourestate.vercel.app/">
+                <Link className="flex justify-center items-center w-1/3" href="https://justcook.fly.dev">
                   <Button
-                    // onClick={() => handleButtonClick('btn4')}
-                    // disabled={buttonLoading.btn4}
+                    // onClick={() => handleButtonClick('btn2')}
+                    // disabled={buttonLoading.btn2}
                     type="button"
                     className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
                     <p>Visit</p>
                   </Button >
                 </Link>
-                <Link className="flex justify-center items-center w-1/3" href="https://github.com/Fortivera/PropertyNextjs">
+                <Link className="flex justify-center items-center w-1/3" href="https://github.com/Fortivera/Recipe_webapp?tab=readme-ov-file">
                   <Button
-                    // onClick={() => handleButtonClick('btn5')}
-                    // disabled={buttonLoading.btn5}
+                    // onClick={() => handleButtonClick('btn3')}
+                    // disabled={buttonLoading.btn3}
                     type="button"
                     className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
                     <Image src="/githublight.svg" alt={"GitHub"} width={24} height={24} />
@@ -268,12 +268,12 @@ export default function Home() {
                 <div className="text-sm">
                   <div className="flex flex-col space-y-5 overflow-y-auto max-h-[25rem]">
                     <p>
-                      Tech Stack: Next.js 14, Typescript, Firebase, Stripe, D3.js
+                      Tech Stack: Typescript, C#, Next.js 14, Azure, D3.js, SQL
                     </p>
                     <ul className="list-disc pl-3 space-y-2">
-                      <li>Analytical charting library that avoids abstraction and gives ownership of the code</li>
-                      <li>Targets the users that need a dynamic and performant charting solution</li>
-                      <li>Has the most used chart types that can be colaged into a dashboard</li>
+                      <li>A modular real estate solution that simplifies property management</li>
+                      <li>Designed to integrate data analytics and visualization capabilities within a single platform</li>
+                      <li>Scalable and user-friendly, suitable for property owners at all experience levels</li>
                     </ul>
                   </div>
                 </div>
