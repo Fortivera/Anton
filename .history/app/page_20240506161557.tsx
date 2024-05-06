@@ -336,7 +336,7 @@ export default function Home() {
                       // onClick={() => handleButtonClick('btn5')}
                       // disabled={buttonLoading.btn5}
                       type="button"
-                      className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
+                      className="w-2/3 hover:bg-[#454166] bg-[#454166] shadow-lg">
                       <Image src="/githublight.svg" alt={"GitHub"} width={24} height={24} />
                     </Button >
                   </Link>

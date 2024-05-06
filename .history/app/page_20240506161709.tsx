@@ -321,7 +321,7 @@ export default function Home() {
                     </ul>
                   </div>
                 </div>
-                <div className="flex flex-row justify-center items-center w-full space-x-5 mx-auto pt-8 hover:bg-none">
+                <div className="flex flex-row justify-center items-center w-full space-x-5 mx-auto px-3 pt-8 hover:bg-none">
                   <Link className="flex justify-center items-center w-2/3" href="https://yourestate.vercel.app/">
                     <Button
                       // onClick={() => handleButtonClick('btn4')}

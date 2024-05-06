@@ -278,7 +278,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex flex-row justify-center items-center w-full space-x-5 mx-auto pt-8 hover:bg-none">
-                  <Link className="flex justify-center items-center w-2/3" href="https://yourestate.vercel.app/">
+                  <Link className="flex justify-center items-center w-1/3" href="https://yourestate.vercel.app/">
                     <Button
                       // onClick={() => handleButtonClick('btn4')}
                       // disabled={buttonLoading.btn4}
@@ -287,7 +287,7 @@ export default function Home() {
                       <p>Visit</p>
                     </Button >
                   </Link>
-                  <Link className="flex justify-center items-center w-2/3" href="https://github.com/Fortivera/PropertyNextjs">
+                  <Link className="flex justify-center items-center w-1/3" href="https://github.com/Fortivera/PropertyNextjs">
                     <Button
                       // onClick={() => handleButtonClick('btn5')}
                       // disabled={buttonLoading.btn5}
@@ -322,7 +322,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex flex-row justify-center items-center w-full space-x-5 mx-auto pt-8 hover:bg-none">
-                  <Link className="flex justify-center items-center w-2/3" href="https://yourestate.vercel.app/">
+                  <Link className="flex justify-center items-center w-1/3" href="https://yourestate.vercel.app/">
                     <Button
                       // onClick={() => handleButtonClick('btn4')}
                       // disabled={buttonLoading.btn4}
@@ -331,7 +331,7 @@ export default function Home() {
                       <p>Visit</p>
                     </Button >
                   </Link>
-                  <Link className="flex justify-center items-center w-2/3" href="https://github.com/Fortivera/PropertyNextjs">
+                  <Link className="flex justify-center items-center w-1/3" href="https://github.com/Fortivera/PropertyNextjs">
                     <Button
                       // onClick={() => handleButtonClick('btn5')}
                       // disabled={buttonLoading.btn5}
