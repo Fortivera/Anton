@@ -52,10 +52,10 @@ export default function Home() {
       <main className="flex flex-col bg-[#131313] w-full mx-auto p-6 flex-grow">
         <section id="about_me" className="container mx-auto px-4">
           <div className="flex flex-col items-center space-y-4">
-            <p className="text-3xl">Anton Strelkovkyy</p>
+            <p className="text-2xl">Anton Strelkovkyy</p>
             {/* <div className="flex justify-center items-center rounded-full border border-white h-20 w-20">pic</div> */}
             <SocialLinks />
-            <p className="flex justify-center items-center w-[30rem] text-xl">Software Engineer</p>
+            <p className="flex justify-center items-center w-[30rem]">Software Engineer</p>
           </div>
         </section>
         {/* Desktop view */}
@@ -94,7 +94,7 @@ export default function Home() {
                   </div>
                 </div>
               </CardContent>
-              <div className="flex justify-center items-center w-full mx-auto pt-8 hover:bg-none">
+              <div className="flex justify-center items-center w-full mx-auto  hover:bg-none">
                 <Link className="flex justify-center items-center w-2/3" href="https://www.graphalytics.co/">
                   <Button
                     // onClick={() => handleButtonClick('btn1')}

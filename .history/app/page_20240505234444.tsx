@@ -55,7 +55,7 @@ export default function Home() {
             <p className="text-3xl">Anton Strelkovkyy</p>
             {/* <div className="flex justify-center items-center rounded-full border border-white h-20 w-20">pic</div> */}
             <SocialLinks />
-            <p className="flex justify-center items-center w-[30rem] text-xl">Software Engineer</p>
+            <p className="flex justify-center items-center w-[30rem]">Software Engineer</p>
           </div>
         </section>
         {/* Desktop view */}

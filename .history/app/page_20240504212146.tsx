@@ -52,14 +52,14 @@ export default function Home() {
       <main className="flex flex-col bg-[#131313] w-full mx-auto p-6 flex-grow">
         <section id="about_me" className="container mx-auto px-4">
           <div className="flex flex-col items-center space-y-4">
-            <p className="text-3xl">Anton Strelkovkyy</p>
+            <p className="text-2xl">Anton Strelkovkyy</p>
             {/* <div className="flex justify-center items-center rounded-full border border-white h-20 w-20">pic</div> */}
             <SocialLinks />
-            <p className="flex justify-center items-center w-[30rem] text-xl">Software Engineer</p>
+            <p className="flex justify-center items-center w-[30rem]">Software Engineer</p>
           </div>
         </section>
         {/* Desktop view */}
-        <section className="hidden sm:grid grid-cols-1 gap-8 justify-items-center py-12 space-y-16" id="projects">
+        <section className="hidden sm:grid grid-cols-1 gap-8 justify-items-center py-12 space-y-16 px-3" id="projects">
           <div className="flex flex-col space-y-5 xl:space-y-0 xl:flex-row xl:space-x-10">
             <Card
               onMouseEnter={() => setIsHoveredPair1(true)}
@@ -68,7 +68,7 @@ export default function Home() {
               ${isHoveredPair1 ? "bg-[#24242779] border-[#21222972]" : "bg-[#9d94e9]"}`}
             >
               <CardContent className="text-[#8b8f8f] p-0 shadow-sm shadow-[#4d4d4d]">
-                <Image className="w-full" src={"/graphalytics.png"} alt={"Graphalytics"} width={1500} height={900} />
+                <Image className="w-full" src={"/graphalytics.png"} alt={"Graphalytics"} width={2000} height={900} />
               </CardContent>
             </Card>
             <Card
@@ -104,6 +104,7 @@ export default function Home() {
                     <p>Visit</p>
                   </Button >
                 </Link>
+
               </div>
             </Card>
           </div>

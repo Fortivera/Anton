@@ -52,10 +52,10 @@ export default function Home() {
       <main className="flex flex-col bg-[#131313] w-full mx-auto p-6 flex-grow">
         <section id="about_me" className="container mx-auto px-4">
           <div className="flex flex-col items-center space-y-4">
-            <p className="text-3xl">Anton Strelkovkyy</p>
+            <p className="text-2xl">Anton Strelkovkyy</p>
             {/* <div className="flex justify-center items-center rounded-full border border-white h-20 w-20">pic</div> */}
             <SocialLinks />
-            <p className="flex justify-center items-center w-[30rem] text-xl">Software Engineer</p>
+            <p className="flex justify-center items-center w-[30rem]">Software Engineer</p>
           </div>
         </section>
         {/* Desktop view */}
@@ -104,10 +104,11 @@ export default function Home() {
                     <p>Visit</p>
                   </Button >
                 </Link>
+
               </div>
             </Card>
           </div>
-          <div className="flex flex-col-reverse xl:space-y-0 xl:flex-row xl:space-x-10">
+          <div className="flex flex-col sm:flex-col-reverse space-y-4 sm:space-y-4 md:flex-row md:space-y-0">
             <Card
               onMouseEnter={() => setIsHoveredPair2(true)}
               onMouseLeave={() => setIsHoveredPair2(false)}
@@ -155,7 +156,7 @@ export default function Home() {
             <Card
               onMouseEnter={() => setIsHoveredPair2(true)}
               onMouseLeave={() => setIsHoveredPair2(false)}
-              className={`max-w-[51rem] relative p-6 border rounded-lg bg-opacity-10  border-[#60647872]  bg-gradient-to-b from-[#35374366] to-[#24212b65] mb-5 xl:mb-0
+              className={`max-w-[51rem] relative p-6 border rounded-lg bg-opacity-10  border-[#60647872]  bg-gradient-to-b from-[#35374366] to-[#24212b65] 
               ${isHoveredPair2 ? "bg-[#24242779] border-[#21222972]" : "bg-[#9d94e9]"}`}
             >
               <CardContent className="text-[#8b8f8f] p-0 shadow-sm shadow-[#4d4d4d]">
