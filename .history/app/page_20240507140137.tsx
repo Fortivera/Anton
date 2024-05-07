@@ -50,176 +50,176 @@ export default function Home() {
         <section id="about_me" className="container mx-auto px-4 pb-10 sm:pb-32 pt-6 sm:pt-14">
           <div className="flex flex-col items-center space-y-1">
             <p className="flex flex-col sm:flex-row justify-center items-center text-center text-4xl pt-5 sm:pt-10 pb-5 font-medium">Anton Strelkovkyy</p>
-            <div className="flex flex-col justify-center items-center py-3">
-              <div className="flex justify-center items-center rounded-full border border-[#333333] h-20 w-20">
-                <Image src="/profilepic.jpg" alt="avatar" width={100} height={100} className="rounded-full" />
-              </div>
-              <SocialLinks />
-              <p className={"flex justify-center items-center text-center max-w-[30rem] text-lg text-neutral-400 text"}>&quot;Problems exist to practise critical thinking, creating elegant solutions in the process.&quot;</p>
-            </div>
+            {/* <div className="flex justify-center items-center rounded-full border border-white h-20 w-20">pic</div> */}
+            <SocialLinks />
+            <p className={"flex justify-center items-center text-center max-w-[30rem] text-lg text-neutral-400 text"}>&quot;Problems exist to practise critical thinking, creating elegant solutions in the process.&quot;</p>
             <p className="flex justify-center items-center text-center max-w-[35rem] text-xl pt-5">Software developer, Saas and business solutions. Passionate about technology and its impact on the world</p>
           </div>
         </section>
         {/* Desktop view */}
-        <section className="hidden sm:grid grid-cols-1 gap-24 justify-items-center py-12 " id="projects">
-          <div className="flex flex-col space-y-5 xl:space-y-0 xl:flex-row xl:space-x-10">
-            <Card
-              onMouseEnter={() => setIsHoveredPair1(true)}
-              onMouseLeave={() => setIsHoveredPair1(false)}
-              className={`max-w-[51rem] relative p-6 border rounded-lg bg-opacity-10  border-[#60647872]  bg-gradient-to-b from-[#35374366] to-[#24212b65] 
+        <section className="hidden sm:grid grid-cols-1  justify-items-center py-12 space-y-20" id="projects">
+          <div className="m-0">Expore my work</div>
+          <div className="">
+            <div className="flex flex-col space-y-5 xl:space-y-0 xl:flex-row xl:space-x-10">
+              <Card
+                onMouseEnter={() => setIsHoveredPair1(true)}
+                onMouseLeave={() => setIsHoveredPair1(false)}
+                className={`max-w-[51rem] relative p-6 border rounded-lg bg-opacity-10  border-[#60647872]  bg-gradient-to-b from-[#35374366] to-[#24212b65] 
               ${isHoveredPair1 ? "bg-[#24242779] border-[#21222972]" : "bg-[#9d94e9]"}`}
-            >
-              <CardContent className="text-[#8b8f8f] p-0 shadow-sm shadow-[#4d4d4d]">
-                <Image className="w-full" src={"/graphalytics.png"} alt={"Graphalytics"} width={1500} height={1500} />
-              </CardContent>
-            </Card>
-            <Card
-              onMouseEnter={() => setIsHoveredPair1(true)}
-              onMouseLeave={() => setIsHoveredPair1(false)}
-              className={`max-w-[51rem] max-h-[25rem] xl:max-h-none xl:max-w-lg relative p-6 border rounded-lg bg-opacity-10  border-[#60647872]  bg-gradient-to-b from-[#35374366] to-[#24212b65] 
+              >
+                <CardContent className="text-[#8b8f8f] p-0 shadow-sm shadow-[#4d4d4d]">
+                  <Image className="w-full" src={"/graphalytics.png"} alt={"Graphalytics"} width={1500} height={1500} />
+                </CardContent>
+              </Card>
+              <Card
+                onMouseEnter={() => setIsHoveredPair1(true)}
+                onMouseLeave={() => setIsHoveredPair1(false)}
+                className={`max-w-[51rem] max-h-[25rem] xl:max-h-none xl:max-w-lg relative p-6 border rounded-lg bg-opacity-10  border-[#60647872]  bg-gradient-to-b from-[#35374366] to-[#24212b65] 
               ${isHoveredPair1 ? "bg-[#24242779] border-[#21222972]" : "bg-[#9d94e9]"}`}
-            >
-              <CardHeader className="pt-0">
-                <CardTitle className="text-lg font-semibold text-[#D1D1D2] pt-0">Graphalytics</CardTitle>
-              </CardHeader>
-              <CardContent className="text-[#8b8f8f]">
-                <div className="text-base">
-                  <div className="flex flex-col space-y-5">
-                    <p>
-                      Tech Stack: Typescript, Next.js 14, Firebase, Stripe, D3.js, NoSQL
-                    </p>
-                    <ul className="list-disc pl-3 space-y-2">
-                      <li>A charting library that minimizes abstraction, empowering users with full control over their code</li>
-                      <li>Designed for users seeking a dynamic and high-performance charting solution</li>
-                      <li>Includes the most popular chart types, seamlessly integrable into an analytics dashboard</li>
-                    </ul>
+              >
+                <CardHeader className="pt-0">
+                  <CardTitle className="text-lg font-semibold text-[#D1D1D2] pt-0">Graphalytics</CardTitle>
+                </CardHeader>
+                <CardContent className="text-[#8b8f8f]">
+                  <div className="text-base">
+                    <div className="flex flex-col space-y-5">
+                      <p>
+                        Tech Stack: Typescript, Next.js 14, Firebase, Stripe, D3.js, NoSQL
+                      </p>
+                      <ul className="list-disc pl-3 space-y-2">
+                        <li>A charting library that minimizes abstraction, empowering users with full control over their code</li>
+                        <li>Designed for users seeking a dynamic and high-performance charting solution</li>
+                        <li>Includes the most popular chart types, seamlessly integrable into an analytics dashboard</li>
+                      </ul>
+                    </div>
                   </div>
+                </CardContent>
+                <div className="flex justify-center items-center w-full mx-auto pt-8 hover:bg-none">
+                  <Link className="flex justify-center items-center w-2/3" href="https://www.graphalytics.co/">
+                    <Button
+                      // onClick={() => handleButtonClick('btn1')}
+                      // disabled={buttonLoading.btn1}
+                      type="button"
+                      className="w-2/3 hover:bg-[#454166] bg-[#454166] shadow-lg">
+                      <p>Visit</p>
+                    </Button >
+                  </Link>
                 </div>
-              </CardContent>
-              <div className="flex justify-center items-center w-full mx-auto pt-8 hover:bg-none">
-                <Link className="flex justify-center items-center w-2/3" href="https://www.graphalytics.co/">
-                  <Button
-                    // onClick={() => handleButtonClick('btn1')}
-                    // disabled={buttonLoading.btn1}
-                    type="button"
-                    className="w-2/3 hover:bg-[#454166] bg-[#454166] shadow-lg">
-                    <p>Visit</p>
-                  </Button >
-                </Link>
-              </div>
-            </Card>
-          </div>
-          <div className="flex flex-col-reverse xl:space-y-0 xl:flex-row xl:space-x-10">
-            <Card
-              onMouseEnter={() => setIsHoveredPair2(true)}
-              onMouseLeave={() => setIsHoveredPair2(false)}
-              className={`max-w-[51rem] max-h-[25rem] xl:max-h-none xl:max-w-lg relative p-6 border rounded-lg bg-opacity-10  border-[#60647872]  bg-gradient-to-b from-[#35374366] to-[#24212b65] 
+              </Card>
+            </div>
+            <div className="flex flex-col-reverse xl:space-y-0 xl:flex-row xl:space-x-10">
+              <Card
+                onMouseEnter={() => setIsHoveredPair2(true)}
+                onMouseLeave={() => setIsHoveredPair2(false)}
+                className={`max-w-[51rem] max-h-[25rem] xl:max-h-none xl:max-w-lg relative p-6 border rounded-lg bg-opacity-10  border-[#60647872]  bg-gradient-to-b from-[#35374366] to-[#24212b65] 
               ${isHoveredPair2 ? "bg-[#24242779] border-[#21222972]" : "bg-[#9d94e9]"}`}
-            >
-              <CardHeader className="pt-0">
-                <CardTitle className="text-lg font-semibold text-[#D1D1D2] pt-0">YourEstate</CardTitle>
-              </CardHeader>
-              <CardContent className="text-[#8b8f8f]">
-                <div className="text-base">
-                  <div className="flex flex-col space-y-5">
-                    <p>
-                      Tech Stack: Typescript, C#, Next.js 14, Azure, D3.js, SQL
-                    </p>
-                    <ul className="list-disc pl-3 space-y-2">
-                      <li>A modular real estate solution that simplifies property management</li>
-                      <li>Designed to integrate data analytics and visualization capabilities within a single platform</li>
-                      <li>Scalable and user-friendly, suitable for property owners at all experience levels</li>
-                    </ul>
+              >
+                <CardHeader className="pt-0">
+                  <CardTitle className="text-lg font-semibold text-[#D1D1D2] pt-0">YourEstate</CardTitle>
+                </CardHeader>
+                <CardContent className="text-[#8b8f8f]">
+                  <div className="text-base">
+                    <div className="flex flex-col space-y-5">
+                      <p>
+                        Tech Stack: Typescript, C#, Next.js 14, Azure, D3.js, SQL
+                      </p>
+                      <ul className="list-disc pl-3 space-y-2">
+                        <li>A modular real estate solution that simplifies property management</li>
+                        <li>Designed to integrate data analytics and visualization capabilities within a single platform</li>
+                        <li>Scalable and user-friendly, suitable for property owners at all experience levels</li>
+                      </ul>
+                    </div>
                   </div>
+                </CardContent>
+                <div className="flex flex-row justify-center items-center w-full space-x-5 mx-auto pt-8 hover:bg-none">
+                  <Link className="flex justify-center items-center w-1/3" href="https://yourestate.vercel.app/">
+                    <Button
+                      // onClick={() => handleButtonClick('btn2')}
+                      // disabled={buttonLoading.btn2}
+                      type="button"
+                      className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
+                      <p>Visit</p>
+                    </Button >
+                  </Link>
+                  <Link className="flex justify-center items-center w-1/3" href="https://github.com/Fortivera/PropertyNextjs">
+                    <Button
+                      // onClick={() => handleButtonClick('btn3')}
+                      // disabled={buttonLoading.btn3}
+                      type="button"
+                      className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
+                      <Image src="/githublight.svg" alt={"GitHub"} width={24} height={24} />
+                    </Button >
+                  </Link>
                 </div>
-              </CardContent>
-              <div className="flex flex-row justify-center items-center w-full space-x-5 mx-auto pt-8 hover:bg-none">
-                <Link className="flex justify-center items-center w-1/3" href="https://yourestate.vercel.app/">
-                  <Button
-                    // onClick={() => handleButtonClick('btn2')}
-                    // disabled={buttonLoading.btn2}
-                    type="button"
-                    className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
-                    <p>Visit</p>
-                  </Button >
-                </Link>
-                <Link className="flex justify-center items-center w-1/3" href="https://github.com/Fortivera/PropertyNextjs">
-                  <Button
-                    // onClick={() => handleButtonClick('btn3')}
-                    // disabled={buttonLoading.btn3}
-                    type="button"
-                    className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
-                    <Image src="/githublight.svg" alt={"GitHub"} width={24} height={24} />
-                  </Button >
-                </Link>
-              </div>
-            </Card>
-            <Card
-              onMouseEnter={() => setIsHoveredPair2(true)}
-              onMouseLeave={() => setIsHoveredPair2(false)}
-              className={`max-w-[51rem] relative p-6 border rounded-lg bg-opacity-10  border-[#60647872]  bg-gradient-to-b from-[#35374366] to-[#24212b65] mb-5 xl:mb-0
+              </Card>
+              <Card
+                onMouseEnter={() => setIsHoveredPair2(true)}
+                onMouseLeave={() => setIsHoveredPair2(false)}
+                className={`max-w-[51rem] relative p-6 border rounded-lg bg-opacity-10  border-[#60647872]  bg-gradient-to-b from-[#35374366] to-[#24212b65] mb-5 xl:mb-0
               ${isHoveredPair2 ? "bg-[#24242779] border-[#21222972]" : "bg-[#9d94e9]"}`}
-            >
-              <CardContent className="text-[#8b8f8f] p-0 shadow-sm shadow-[#4d4d4d]">
-                <Image className="w-full" src={"/yourestate.png"} alt={"YourEstate"} width={1500} height={1500} />
-              </CardContent>
-            </Card>
-          </div>
-          <div className="flex flex-col xl:space-y-0 xl:flex-row xl:space-x-10">
-            <Card
-              onMouseEnter={() => setIsHoveredPair2(true)}
-              onMouseLeave={() => setIsHoveredPair2(false)}
-              className={`max-w-[51rem] relative p-6 border rounded-lg bg-opacity-10  border-[#60647872]  bg-gradient-to-b from-[#35374366] to-[#24212b65] mb-5 xl:mb-0
+              >
+                <CardContent className="text-[#8b8f8f] p-0 shadow-sm shadow-[#4d4d4d]">
+                  <Image className="w-full" src={"/yourestate.png"} alt={"YourEstate"} width={1500} height={1500} />
+                </CardContent>
+              </Card>
+            </div>
+            <div className="flex flex-col xl:space-y-0 xl:flex-row xl:space-x-10">
+              <Card
+                onMouseEnter={() => setIsHoveredPair2(true)}
+                onMouseLeave={() => setIsHoveredPair2(false)}
+                className={`max-w-[51rem] relative p-6 border rounded-lg bg-opacity-10  border-[#60647872]  bg-gradient-to-b from-[#35374366] to-[#24212b65] mb-5 xl:mb-0
               ${isHoveredPair2 ? "bg-[#24242779] border-[#21222972]" : "bg-[#9d94e9]"}`}
-            >
-              <CardContent className="text-[#8b8f8f] p-0 shadow-sm shadow-[#4d4d4d]">
-                <Image className="w-full" src={"/justcookit.png"} alt={"Justcookit"} width={1500} height={1500} />
-              </CardContent>
-            </Card>
-            <Card
-              onMouseEnter={() => setIsHoveredPair2(true)}
-              onMouseLeave={() => setIsHoveredPair2(false)}
-              className={`max-w-[51rem] max-h-[25rem] xl:max-h-none xl:max-w-lg relative p-6 border rounded-lg bg-opacity-10  border-[#60647872]  bg-gradient-to-b from-[#35374366] to-[#24212b65] 
+              >
+                <CardContent className="text-[#8b8f8f] p-0 shadow-sm shadow-[#4d4d4d]">
+                  <Image className="w-full" src={"/justcookit.png"} alt={"Justcookit"} width={1500} height={1500} />
+                </CardContent>
+              </Card>
+              <Card
+                onMouseEnter={() => setIsHoveredPair2(true)}
+                onMouseLeave={() => setIsHoveredPair2(false)}
+                className={`max-w-[51rem] max-h-[25rem] xl:max-h-none xl:max-w-lg relative p-6 border rounded-lg bg-opacity-10  border-[#60647872]  bg-gradient-to-b from-[#35374366] to-[#24212b65] 
               ${isHoveredPair2 ? "bg-[#24242779] border-[#21222972]" : "bg-[#9d94e9]"}`}
-            >
-              <CardHeader className="pt-0">
-                <CardTitle className="text-lg font-semibold text-[#D1D1D2] pt-0">Justcookit</CardTitle>
-              </CardHeader>
-              <CardContent className="text-[#8b8f8f]">
-                <div className="text-base">
-                  <div className="flex flex-col space-y-5">
-                    <p>
-                      Tech Stack: Python, Django, Amazon S3, PostgreSQL
-                    </p>
-                    <ul className="list-disc pl-3 space-y-2">
-                      <li>Recipe website featuring thousands of diverse dishes</li>
-                      <li>Features easy-to-follow instructions and a user-friendly interface</li>
-                      <li>Great virity of recipes of all cousines</li>
-                    </ul>
+              >
+                <CardHeader className="pt-0">
+                  <CardTitle className="text-lg font-semibold text-[#D1D1D2] pt-0">Justcookit</CardTitle>
+                </CardHeader>
+                <CardContent className="text-[#8b8f8f]">
+                  <div className="text-base">
+                    <div className="flex flex-col space-y-5">
+                      <p>
+                        Tech Stack: Python, Django, Amazon S3, PostgreSQL
+                      </p>
+                      <ul className="list-disc pl-3 space-y-2">
+                        <li>Recipe website featuring thousands of diverse dishes</li>
+                        <li>Features easy-to-follow instructions and a user-friendly interface</li>
+                        <li>Great virity of recipes of all cousines</li>
+                      </ul>
+                    </div>
                   </div>
+                </CardContent>
+                <div className="flex flex-row justify-center items-center w-full space-x-5 mx-auto pt-8 hover:bg-none">
+                  <Link className="flex justify-center items-center w-1/3" href="https://justcook.fly.dev">
+                    <Button
+                      // onClick={() => handleButtonClick('btn2')}
+                      // disabled={buttonLoading.btn2}
+                      type="button"
+                      className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
+                      <p>Visit</p>
+                    </Button >
+                  </Link>
+                  <Link className="flex justify-center items-center w-1/3" href="https://github.com/Fortivera/Recipe_webapp?tab=readme-ov-file">
+                    <Button
+                      // onClick={() => handleButtonClick('btn3')}
+                      // disabled={buttonLoading.btn3}
+                      type="button"
+                      className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
+                      <Image src="/githublight.svg" alt={"GitHub"} width={24} height={24} />
+                    </Button >
+                  </Link>
                 </div>
-              </CardContent>
-              <div className="flex flex-row justify-center items-center w-full space-x-5 mx-auto pt-8 hover:bg-none">
-                <Link className="flex justify-center items-center w-1/3" href="https://justcook.fly.dev">
-                  <Button
-                    // onClick={() => handleButtonClick('btn2')}
-                    // disabled={buttonLoading.btn2}
-                    type="button"
-                    className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
-                    <p>Visit</p>
-                  </Button >
-                </Link>
-                <Link className="flex justify-center items-center w-1/3" href="https://github.com/Fortivera/Recipe_webapp?tab=readme-ov-file">
-                  <Button
-                    // onClick={() => handleButtonClick('btn3')}
-                    // disabled={buttonLoading.btn3}
-                    type="button"
-                    className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
-                    <Image src="/githublight.svg" alt={"GitHub"} width={24} height={24} />
-                  </Button >
-                </Link>
-              </div>
-            </Card>
+              </Card>
+            </div>
+
           </div>
 
         </section >

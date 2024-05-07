@@ -50,13 +50,11 @@ export default function Home() {
         <section id="about_me" className="container mx-auto px-4 pb-10 sm:pb-32 pt-6 sm:pt-14">
           <div className="flex flex-col items-center space-y-1">
             <p className="flex flex-col sm:flex-row justify-center items-center text-center text-4xl pt-5 sm:pt-10 pb-5 font-medium">Anton Strelkovkyy</p>
-            <div className="flex flex-col justify-center items-center py-3">
-              <div className="flex justify-center items-center rounded-full border border-[#333333] h-20 w-20">
-                <Image src="/profilepic.jpg" alt="avatar" width={100} height={100} className="rounded-full" />
-              </div>
-              <SocialLinks />
-              <p className={"flex justify-center items-center text-center max-w-[30rem] text-lg text-neutral-400 text"}>&quot;Problems exist to practise critical thinking, creating elegant solutions in the process.&quot;</p>
+            <div className="flex justify-center items-center rounded-full border border-white h-20 w-20">
+              <Image src="/profilepic.jpg" alt="avatar" width={100} height={100} className="rounded-full" />
             </div>
+            <SocialLinks />
+            <p className={"flex justify-center items-center text-center max-w-[30rem] text-lg text-neutral-400 text"}>&quot;Problems exist to practise critical thinking, creating elegant solutions in the process.&quot;</p>
             <p className="flex justify-center items-center text-center max-w-[35rem] text-xl pt-5">Software developer, Saas and business solutions. Passionate about technology and its impact on the world</p>
           </div>
         </section>

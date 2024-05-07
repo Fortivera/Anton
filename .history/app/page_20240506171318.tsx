@@ -47,21 +47,17 @@ export default function Home() {
     <div className="min-h-screen w-full flex flex-col text-white text-base">
       {/* <Header /> */}
       <main className="flex flex-col bg-[#131313] w-full mx-auto p-6 flex-grow">
-        <section id="about_me" className="container mx-auto px-4 pb-10 sm:pb-32 pt-6 sm:pt-14">
+        <section id="about_me" className="container mx-auto px-4">
           <div className="flex flex-col items-center space-y-1">
             <p className="flex flex-col sm:flex-row justify-center items-center text-center text-4xl pt-5 sm:pt-10 pb-5 font-medium">Anton Strelkovkyy</p>
-            <div className="flex flex-col justify-center items-center py-3">
-              <div className="flex justify-center items-center rounded-full border border-[#333333] h-20 w-20">
-                <Image src="/profilepic.jpg" alt="avatar" width={100} height={100} className="rounded-full" />
-              </div>
-              <SocialLinks />
-              <p className={"flex justify-center items-center text-center max-w-[30rem] text-lg text-neutral-400 text"}>&quot;Problems exist to practise critical thinking, creating elegant solutions in the process.&quot;</p>
-            </div>
+            {/* <div className="flex justify-center items-center rounded-full border border-white h-20 w-20">pic</div> */}
+            <SocialLinks />
+            <p className={"flex justify-center items-center text-center max-w-[30rem] text-lg text-neutral-400 text"}>&quot;Problems exist to practise critical thinking, creating elegant solutions in the process.&quot;</p>
             <p className="flex justify-center items-center text-center max-w-[35rem] text-xl pt-5">Software developer, Saas and business solutions. Passionate about technology and its impact on the world</p>
           </div>
         </section>
         {/* Desktop view */}
-        <section className="hidden sm:grid grid-cols-1 gap-24 justify-items-center py-12 " id="projects">
+        <section className="hidden sm:grid grid-cols-1 gap-8 justify-items-center py-12 space-y-16" id="projects">
           <div className="flex flex-col space-y-5 xl:space-y-0 xl:flex-row xl:space-x-10">
             <Card
               onMouseEnter={() => setIsHoveredPair1(true)}
@@ -189,12 +185,12 @@ export default function Home() {
                 <div className="text-base">
                   <div className="flex flex-col space-y-5">
                     <p>
-                      Tech Stack: Python, Django, Amazon S3, PostgreSQL
+                      Tech Stack: Python, Django, Amazon S3, PosgreSql
                     </p>
                     <ul className="list-disc pl-3 space-y-2">
-                      <li>Recipe website featuring thousands of diverse dishes</li>
-                      <li>Features easy-to-follow instructions and a user-friendly interface</li>
-                      <li>Great virity of recipes of all cousines</li>
+                      <li>A modular real estate solution that simplifies property management</li>
+                      <li>Designed to integrate data analytics and visualization capabilities within a single platform</li>
+                      <li>Scalable and user-friendly, suitable for property owners at all experience levels</li>
                     </ul>
                   </div>
                 </div>
