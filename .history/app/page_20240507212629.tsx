@@ -177,7 +177,7 @@ export default function Home() {
                     <p>Visit</p>
                   </Button >
                 </Link>
-                <Link className="flex justify-center items-center w-1/3" href="https://github.com/Fortivera/Recipe_webapp">
+                <Link className="flex justify-center items-center w-1/3" href="https://github.com/Fortivera/Recipe_webapp?tab=readme-ov-file">
                   <Button
                     type="button"
                     className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
@@ -289,7 +289,7 @@ export default function Home() {
                       <p>Visit</p>
                     </Button >
                   </Link>
-                  <Link className="flex justify-center items-center w-2/3" href="https://github.com/Fortivera/Recipe_webapp">
+                  <Link className="flex justify-center items-center w-2/3" href="https://github.com/Fortivera/PropertyNextjs">
                     <Button
                       type="button"
                       className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">

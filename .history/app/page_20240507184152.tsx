@@ -22,7 +22,7 @@ export default function Home() {
       <main className="flex flex-col bg-[#131313] w-full mx-auto p-6 flex-grow">
         <section id="about_me" className="container mx-auto px-4 pb-10 sm:pb-32 pt-6 sm:pt-14">
           <div className="flex flex-col items-center space-y-1">
-            <p className="flex flex-col sm:flex-row justify-center items-center text-center text-4xl pt-5 sm:pt-10 pb-5 font-medium text-[#d9d9db]">Anton Strelkovkyy</p>
+            <p className="flex flex-col sm:flex-row justify-center items-center text-center text-4xl pt-5 sm:pt-10 pb-5 font-medium text-neutral-200">Anton Strelkovkyy</p>
             <div className="flex flex-col justify-center items-center py-3">
               <div className="flex justify-center items-center rounded-full border border-[#333333] h-20 w-20">
                 <Image src="/profilepic.jpg" alt="avatar" width={100} height={100} className="rounded-full" />
@@ -33,7 +33,7 @@ export default function Home() {
               </p>
 
             </div>
-            <p className="flex justify-center items-center text-center max-w-[35rem] text-xl pt-5 text-[#d5d5d8]">Software developer, SaaS, full-stack and business solutions. Passionate about technology and its impact on the world.</p>
+            <p className="flex justify-center items-center text-center max-w-[35rem] text-xl pt-5">Software developer, Saas and business solutions. Passionate about technology and its impact on the world</p>
           </div>
         </section>
         {/* Desktop view */}
@@ -115,7 +115,7 @@ export default function Home() {
                     <p>Visit</p>
                   </Button >
                 </Link>
-                <Link className="flex justify-center items-center w-1/3" href="https://github.com/Fortivera/yourestate">
+                <Link className="flex justify-center items-center w-1/3" href="https://github.com/Fortivera/PropertyNextjs">
                   <Button
                     type="button"
                     className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
@@ -162,9 +162,9 @@ export default function Home() {
                       Tech Stack: Python, Django, Amazon S3, PostgreSQL
                     </p>
                     <ul className="list-disc pl-3 space-y-2">
-                      <li>Recipe website featuring thousands of diverse dishes, easily searchable</li>
-                      <li>Features beginner-friendly instructions with an intuitive interface</li>
-                      <li>Includes a fully-functional admin dashboard for easy management of recipes and images</li>
+                      <li>Recipe website featuring thousands of diverse dishes</li>
+                      <li>Features easy-to-follow instructions and a user-friendly interface</li>
+                      <li>Great virity of recipes of all cousines</li>
                     </ul>
                   </div>
                 </div>
@@ -177,7 +177,7 @@ export default function Home() {
                     <p>Visit</p>
                   </Button >
                 </Link>
-                <Link className="flex justify-center items-center w-1/3" href="https://github.com/Fortivera/Recipe_webapp">
+                <Link className="flex justify-center items-center w-1/3" href="https://github.com/Fortivera/Recipe_webapp?tab=readme-ov-file">
                   <Button
                     type="button"
                     className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
@@ -250,7 +250,7 @@ export default function Home() {
                       <p>Visit</p>
                     </Button >
                   </Link>
-                  <Link className="flex justify-center items-center w-2/3" href="https://github.com/Fortivera/yourestate">
+                  <Link className="flex justify-center items-center w-2/3" href="https://github.com/Fortivera/PropertyNextjs">
                     <Button
                       type="button"
                       className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
@@ -275,21 +275,21 @@ export default function Home() {
                       Tech Stack: Next.js 14, Typescript, Firebase, Stripe, D3.js
                     </p>
                     <ul className="list-disc pl-3 space-y-2">
-                      <li>Recipe website featuring thousands of diverse dishes, easily searchable</li>
-                      <li>Features beginner-friendly instructions with an intuitive interface</li>
-                      <li>Includes a fully-functional admin dashboard for easy management of recipes and images</li>
+                      <li>Analytical charting library that avoids abstraction and gives ownership of the code</li>
+                      <li>Targets the users that need a dynamic and performant charting solution</li>
+                      <li>Has the most used chart types that can be colaged into a dashboard</li>
                     </ul>
                   </div>
                 </div>
                 <div className="flex flex-row justify-center items-center w-full space-x-5 mx-auto pt-8 hover:bg-none">
-                  <Link className="flex justify-center items-center w-2/3" href="https://justcook.fly.dev">
+                  <Link className="flex justify-center items-center w-2/3" href="https://yourestate.vercel.app/">
                     <Button
                       type="button"
                       className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
                       <p>Visit</p>
                     </Button >
                   </Link>
-                  <Link className="flex justify-center items-center w-2/3" href="https://github.com/Fortivera/Recipe_webapp">
+                  <Link className="flex justify-center items-center w-2/3" href="https://github.com/Fortivera/PropertyNextjs">
                     <Button
                       type="button"
                       className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
