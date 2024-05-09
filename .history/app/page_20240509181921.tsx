@@ -22,8 +22,10 @@ export default function Home() {
       <main className="flex flex-col bg-[#131313] w-full mx-auto p-6 flex-grow">
         <section id="about_me" className="container mx-auto px-4 pb-10 sm:pb-32 pt-6 sm:pt-14">
           <div className="flex flex-col items-center space-y-1">
-            <p className="flex flex-col sm:flex-row justify-center items-center text-center pt-5 sm:pt-10 pb-5 font-medium text-5xl text-transparent bg-clip-text bg-gradient-to-b to-[#cccccc] from-[#ffffff]">Anton Strelkovkyy</p>
-
+            <p className="flex flex-col sm:flex-row justify-center items-center text-center text-4xl pt-5 sm:pt-10 pb-5 font-medium text-[#d9d9db]">Anton Strelkovkyy</p>
+            <h1 className="block text-4xl text-transparent bg-clip-text bg-gradient-to-b from-[#838383] to-[#dddddd]">
+              Build in a weekend
+            </h1>
             <div className="flex flex-col justify-center items-center py-3">
               <div className="flex justify-center items-center rounded-full border border-[#333333] h-20 w-20">
                 <Image src="/profilepic.jpg" alt="avatar" width={100} height={100} className="rounded-full" />
