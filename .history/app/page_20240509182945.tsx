@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <div className="min-h-screen w-full flex flex-col text-white text-base">
       <main className="flex flex-col bg-[#131313] w-full mx-auto p-6 flex-grow">
-        <section id="about_me" className="container mx-auto px-4 pb-10 sm:pb-20 pt-6 sm:pt-7">
+        <section id="about_me" className="container mx-auto px-4 pb-10 sm:pb-32 pt-6 sm:pt-7">
           <div className="flex flex-col items-center space-y-1">
             <p className="flex flex-col sm:flex-row justify-center items-center text-center pt-5 sm:pt-10 pb-5 font-medium text-5xl text-transparent bg-clip-text bg-gradient-to-b to-[#cccccc] from-[#ffffff]">Anton Strelkovkyy</p>
 
