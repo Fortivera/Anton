@@ -171,14 +171,14 @@ export default function Home() {
                 </div>
               </CardContent>
               <div className="flex flex-row justify-center items-center w-full space-x-5 mx-auto pt-8 hover:bg-none">
-                <Link className="flex justify-center items-center w-[38%]" href="https://justcook.fly.dev">
+                <Link className="flex justify-center items-center w-1/3" href="https://justcook.fly.dev">
                   <Button
                     type="button"
                     className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
                     <p>Visit</p>
                   </Button >
                 </Link>
-                <Link className="flex justify-center items-center w-[38%]" href="https://github.com/Fortivera/Recipe_webapp">
+                <Link className="flex justify-center items-center w-1/3" href="https://github.com/Fortivera/Recipe_webapp">
                   <Button
                     type="button"
                     className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">

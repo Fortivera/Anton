@@ -9,14 +9,59 @@ import {
 import Image from "next/image"
 import { useState } from "react"
 import SocialLinks from "@/components/Footer"
-import Link from "next/link"
+import { Loader2 } from "lucide-react"
+
 
 export default function Home() {
   const [isHoveredPair1, setIsHoveredPair1] = useState<boolean>(false)
   const [isHoveredPair2, setIsHoveredPair2] = useState<boolean>(false)
   const [isHoveredPair3, setIsHoveredPair3] = useState<boolean>(false)
+  const [buttonClicked, setbuttonClicked] = useState<string | null>(null);
 
+  const VisitButton = ({ buttonId, targetUrl }: { buttonId: string, targetUrl: string }) => {
+    const [isLoading, setIsLoading] = useState(false);
 
+    return (
+      <a className="w-full" href={targetUrl}>
+        <Button
+          id={buttonId}
+          type="button"
+          className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg"
+          onClick={() => setIsLoading(true)}
+          disabled={isLoading}
+        >
+          <div>
+            {isLoading && <Loader2 className="inline mr-2 h-4 w-4 animate-spin" />}
+            {isLoading ? 'Please wait' : 'Visit'}
+          </div>
+        </Button>
+      </a>
+    );
+  }
+  const GitButton = ({ buttonId, targetUrl }: { buttonId: string, targetUrl: string }) => {
+    const [isLoading, setIsLoading] = useState(false);
+
+    return (
+      <a className="w-full" href={targetUrl}>
+        <Button
+          id={buttonId}
+          type="button"
+          className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg"
+          onClick={() => setIsLoading(true)}
+          disabled={isLoading}
+        >
+          <div>
+            {isLoading && <Loader2 className="inline mr-2 h-4 w-4 animate-spin" />}
+            {isLoading ?
+              'Please wait'
+              :
+              <Image src="/githublight.svg" alt={"GitHub"} width={24} height={24} />
+            }
+          </div>
+        </Button>
+      </a>
+    );
+  }
   return (
     <div className="min-h-screen w-full flex flex-col text-white text-base">
       <main className="flex flex-col bg-[#131313] w-full mx-auto p-6 flex-grow">
@@ -74,13 +119,9 @@ export default function Home() {
                 </div>
               </CardContent>
               <div className="flex justify-center items-center w-full mx-auto pt-8 hover:bg-none">
-                <Link className="flex justify-center items-center w-2/3" href="https://www.graphalytics.co/">
-                  <Button
-                    type="button"
-                    className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
-                    <p>Visit</p>
-                  </Button >
-                </Link>
+                <div className="flex justify-center items-center w-2/3">
+                  <VisitButton key={"btn1"} buttonId={"btn1"} targetUrl={"https://www.graphalytics.co/"}></VisitButton>
+                </div>
               </div>
             </Card>
           </div>
@@ -109,20 +150,12 @@ export default function Home() {
                 </div>
               </CardContent>
               <div className="flex flex-row justify-center items-center w-full space-x-5 mx-auto pt-8 hover:bg-none">
-                <Link className="flex justify-center items-center w-[38%]" href="https://yourestate.vercel.app/">
-                  <Button
-                    type="button"
-                    className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
-                    <p>Visit</p>
-                  </Button >
-                </Link>
-                <Link className="flex justify-center items-center w-[38%]" href="https://github.com/Fortivera/yourestate">
-                  <Button
-                    type="button"
-                    className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
-                    <Image src="/githublight.svg" alt={"GitHub"} width={24} height={24} />
-                  </Button >
-                </Link>
+                <div className="flex justify-center items-center w-[38%]" >
+                  <VisitButton key={"btn2"} buttonId={"btn2"} targetUrl={"https://yourestate.vercel.app/"}></VisitButton>
+                </div>
+                <div className="flex justify-center items-center w-[38%]">
+                  <GitButton key={"btn3"} buttonId={"btn3"} targetUrl={"https://github.com/Fortivera/yourestate"}></GitButton>
+                </div>
               </div>
             </Card>
             <Card
@@ -171,20 +204,12 @@ export default function Home() {
                 </div>
               </CardContent>
               <div className="flex flex-row justify-center items-center w-full space-x-5 mx-auto pt-8 hover:bg-none">
-                <Link className="flex justify-center items-center w-[38%]" href="https://justcook.fly.dev">
-                  <Button
-                    type="button"
-                    className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
-                    <p>Visit</p>
-                  </Button >
-                </Link>
-                <Link className="flex justify-center items-center w-[38%]" href="https://github.com/Fortivera/Recipe_webapp">
-                  <Button
-                    type="button"
-                    className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
-                    <Image src="/githublight.svg" alt={"GitHub"} width={24} height={24} />
-                  </Button >
-                </Link>
+                <div className="flex justify-center items-center w-[38%]  ">
+                  <VisitButton key={"btn4"} buttonId={"btn4"} targetUrl={"https://justcook.fly.dev/"}></VisitButton>
+                </div>
+                <div className="flex justify-center items-center w-[38%]  ">
+                  <GitButton key={"btn5"} buttonId={"btn5"} targetUrl={"https://github.com/Fortivera/Recipe_webapp"}></GitButton>
+                </div>
               </div>
             </Card>
           </div>
@@ -212,13 +237,9 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex justify-center items-center w-full mx-auto pt-8 hover:bg-none">
-                  <Link className="flex justify-center items-center w-2/3" href="https://www.graphalytics.co/">
-                    <Button
-                      type="button"
-                      className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
-                      <p>Visit</p>
-                    </Button >
-                  </Link>
+                  <div className="flex justify-center items-center w-2/3">
+                    <VisitButton key={"btn6"} buttonId={"btn6"} targetUrl={"https://www.graphalytics.co/"}></VisitButton>
+                  </div>
                 </div>
               </CardContent>
             </Card>
@@ -244,20 +265,12 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex flex-row justify-center items-center w-full space-x-5 mx-auto pt-8 hover:bg-none">
-                  <Link className="flex justify-center items-center w-2/3" href="https://yourestate.vercel.app/">
-                    <Button
-                      type="button"
-                      className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
-                      <p>Visit</p>
-                    </Button >
-                  </Link>
-                  <Link className="flex justify-center items-center w-2/3" href="https://github.com/Fortivera/yourestate">
-                    <Button
-                      type="button"
-                      className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
-                      <Image src="/githublight.svg" alt={"GitHub"} width={24} height={24} />
-                    </Button >
-                  </Link>
+                  <div className="flex justify-center items-center w-2/5">
+                    <VisitButton key={"btn7"} buttonId={"btn7"} targetUrl={"https://yourestate.vercel.app/"}></VisitButton>
+                  </div>
+                  <div className="flex justify-center items-center w-2/5">
+                    <GitButton key={"btn8"} buttonId={"btn8"} targetUrl={"https://github.com/Fortivera/yourestate"}></GitButton>
+                  </div>
                 </div>
               </CardContent>
             </Card>
@@ -283,20 +296,12 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex flex-row justify-center items-center w-full space-x-5 mx-auto pt-8 hover:bg-none">
-                  <Link className="flex justify-center items-center w-2/3" href="https://justcook.fly.dev">
-                    <Button
-                      type="button"
-                      className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
-                      <p>Visit</p>
-                    </Button >
-                  </Link>
-                  <Link className="flex justify-center items-center w-2/3" href="https://github.com/Fortivera/Recipe_webapp">
-                    <Button
-                      type="button"
-                      className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
-                      <Image src="/githublight.svg" alt={"GitHub"} width={24} height={24} />
-                    </Button >
-                  </Link>
+                  <div className="flex justify-center items-center w-2/5">
+                    <VisitButton key={"btn6"} buttonId={"btn6"} targetUrl={"https://justcook.fly.dev/"}></VisitButton>
+                  </div>
+                  <div className="flex justify-center items-center w-2/5">
+                    <GitButton key={"btn9"} buttonId={"btn9"} targetUrl={"https://github.com/Fortivera/Recipe_webapp"}></GitButton>
+                  </div>
                 </div>
               </CardContent>
             </Card>

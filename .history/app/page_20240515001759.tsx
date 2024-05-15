@@ -77,7 +77,7 @@ export default function Home() {
                 <Link className="flex justify-center items-center w-2/3" href="https://www.graphalytics.co/">
                   <Button
                     type="button"
-                    className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
+                    className="w-2/3 hover:bg-[#454166] bg-[#454166] shadow-lg">
                     <p>Visit</p>
                   </Button >
                 </Link>
@@ -109,14 +109,14 @@ export default function Home() {
                 </div>
               </CardContent>
               <div className="flex flex-row justify-center items-center w-full space-x-5 mx-auto pt-8 hover:bg-none">
-                <Link className="flex justify-center items-center w-[38%]" href="https://yourestate.vercel.app/">
+                <Link className="flex justify-center items-center w-1/3" href="https://yourestate.vercel.app/">
                   <Button
                     type="button"
                     className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
                     <p>Visit</p>
                   </Button >
                 </Link>
-                <Link className="flex justify-center items-center w-[38%]" href="https://github.com/Fortivera/yourestate">
+                <Link className="flex justify-center items-center w-1/3" href="https://github.com/Fortivera/yourestate">
                   <Button
                     type="button"
                     className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
@@ -141,7 +141,7 @@ export default function Home() {
               onMouseEnter={() => setIsHoveredPair3(true)}
               onMouseLeave={() => setIsHoveredPair3(false)}
               className={`max-w-[51rem] relative p-6 border rounded-lg bg-opacity-10  border-[#60647872]  bg-gradient-to-b from-[#35374366] to-[#24212b65] mb-5 xl:mb-0
-              ${isHoveredPair3 ? "bg-[#24242779] border-[#21222972]" : "bg-[#9d94e9]"}`}
+              ${isHoveredPair2 ? "bg-[#24242779] border-[#21222972]" : "bg-[#9d94e9]"}`}
             >
               <CardContent className="text-[#8b8f8f] p-0 shadow-sm shadow-[#4d4d4d]">
                 <Image className="w-full" src={"/justcookit.png"} alt={"Justcookit"} width={1500} height={1500} />
@@ -171,14 +171,14 @@ export default function Home() {
                 </div>
               </CardContent>
               <div className="flex flex-row justify-center items-center w-full space-x-5 mx-auto pt-8 hover:bg-none">
-                <Link className="flex justify-center items-center w-[38%]" href="https://justcook.fly.dev">
+                <Link className="flex justify-center items-center w-1/3" href="https://justcook.fly.dev">
                   <Button
                     type="button"
                     className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
                     <p>Visit</p>
                   </Button >
                 </Link>
-                <Link className="flex justify-center items-center w-[38%]" href="https://github.com/Fortivera/Recipe_webapp">
+                <Link className="flex justify-center items-center w-1/3" href="https://github.com/Fortivera/Recipe_webapp">
                   <Button
                     type="button"
                     className="w-full hover:bg-[#454166] bg-[#454166] shadow-lg">
