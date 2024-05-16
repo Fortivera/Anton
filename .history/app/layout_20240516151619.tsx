@@ -24,9 +24,7 @@ export default function RootLayout({
       <body className={cn(
         "min-h-screen bg-[#c2b3b3] antialiased",
         inter.className
-      )}>
-        {children}
-        <Analytics />
+      )}>{children}
       </body>
     </html>
   );
