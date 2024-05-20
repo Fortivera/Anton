@@ -9,13 +9,14 @@ yarn dev
 # or
 pnpm dev
 ```
+
 ## Production build
+
 Build and run for production
 
 ```bash
   pnpm build
-  pnpm start 
+  pnpm start
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-

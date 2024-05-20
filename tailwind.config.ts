@@ -1,16 +1,15 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
 
 const config = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
   ],
   prefix: "",
   theme: {
-
     container: {
       center: true,
       padding: "2rem",
@@ -34,17 +33,14 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       flexGrow: {
-        2: '2',  // Example: Add custom grow rate
+        2: "2", // Example: Add custom grow rate
       },
       flexShrink: {
-        2: '2', // Example: Add custom shrink rate
+        2: "2", // Example: Add custom shrink rate
       },
     },
   },
-  plugins: [
-    require("tailwindcss-animate"),
-    require('@tailwindcss/typography'),
-  ],
-} satisfies Config
+  plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
+} satisfies Config;
 
-export default config
+export default config;

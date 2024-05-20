@@ -1,13 +1,8 @@
-export default function Blog(){
+export default function Blog() {
     return (
         <>
-            <header>
-                the blog page
-            </header>
-            <section>
-                story 1
-            </section>
-
+            <header>the blog page</header>
+            <section>story 1</section>
         </>
-    )
+    );
 }

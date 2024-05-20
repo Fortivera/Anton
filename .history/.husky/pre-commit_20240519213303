@@ -1,0 +1,5 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+node -e "require('events').EventEmitter.defaultMaxListeners = 50"
+pnpm exec lint-staged
