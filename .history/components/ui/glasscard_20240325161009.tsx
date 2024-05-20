@@ -1,20 +1,20 @@
 import React from "react";
 
 type GlassyComponentProps = {
-    // define your props here
+  // define your props here
 };
 
 const GlassyComponent: React.FC<GlassyComponentProps> = (props) => {
-    return (
-        <div className="relative rounded-lg border border-gray-200 bg-white/10 bg-opacity-20 p-6 backdrop-blur-md">
-            <h1 className="text-lg font-semibold">Add translucent modals</h1>
-            <p>We should bring the glass effect to the app</p>
-            {/* The rest of your component */}
-            <button className="mt-4 rounded bg-blue-500/75 px-4 py-2 font-bold text-white hover:bg-blue-700/75">
-                Save issue
-            </button>
-        </div>
-    );
+  return (
+    <div className="relative rounded-lg border border-gray-200 bg-white/10 bg-opacity-20 p-6 backdrop-blur-md">
+      <h1 className="text-lg font-semibold">Add translucent modals</h1>
+      <p>We should bring the glass effect to the app</p>
+      {/* The rest of your component */}
+      <button className="mt-4 rounded bg-blue-500/75 px-4 py-2 font-bold text-white hover:bg-blue-700/75">
+        Save issue
+      </button>
+    </div>
+  );
 };
 
 export default GlassyComponent;

@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
-    "prettier": "prettier --write */**/*.{js,jsx,json,ts,tsx,scss,css,md}",
+    "prettier": "prettier --write *.{js,jsx,json,ts,tsx,scss,css,md}",
     "prepare": "husky install"
   },
   "dependencies": {

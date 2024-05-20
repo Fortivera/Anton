@@ -6,25 +6,25 @@ import { cn } from "@/lib/utils";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: "Anton Strelkovkyy",
-    description: "Personal website of Anton Strelkovkyy",
+  title: "Anton Strelkovkyy",
+  description: "Personal website of Anton Strelkovkyy",
 };
 
 export default function RootLayout({
-    children,
+  children,
 }: Readonly<{
-    children: React.ReactNode;
+  children: React.ReactNode;
 }>) {
-    return (
-        <html lang="en">
-            <body
-                className={cn(
-                    "min-h-screen bg-[#c2b3b3] font-sans antialiased",
-                    inter.className,
-                )}
-            >
-                {children}
-            </body>
-        </html>
-    );
+  return (
+    <html lang="en">
+      <body
+        className={cn(
+          "min-h-screen bg-[#c2b3b3] font-sans antialiased",
+          inter.className
+        )}
+      >
+        {children}
+      </body>
+    </html>
+  );
 }
