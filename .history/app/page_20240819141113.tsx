@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 "use client";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -230,7 +231,7 @@ export default function Home() {
             <Card
               onMouseEnter={() => setIsHoveredPair3(true)}
               onMouseLeave={() => setIsHoveredPair3(false)}
-              className={`relative max-w-[51rem] rounded-lg border border-[#60647872] bg-opacity-10 bg-gradient-to-b from-[#35374366]  to-[#24212b65]  p-6 xl:max-h-none xl:max-w-lg 
+              className={`relative max-h-[25rem] max-w-[51rem] rounded-lg border border-[#60647872] bg-opacity-10 bg-gradient-to-b from-[#35374366]  to-[#24212b65]  p-6 xl:max-h-none xl:max-w-lg 
                             ${isHoveredPair3 ? "border-[#21222972] bg-[#24242779]" : "bg-[#9d94e9]"}`}
             >
               <CardHeader className="pt-0">

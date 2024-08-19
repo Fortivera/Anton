@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 "use client";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -72,7 +73,7 @@ export default function Home() {
             <Card
               onMouseEnter={() => setIsHoveredPair1(true)}
               onMouseLeave={() => setIsHoveredPair1(false)}
-              className={`relative max-w-[51rem] rounded-lg border border-[#60647872] bg-opacity-10 bg-gradient-to-b from-[#35374366]  to-[#24212b65]  p-6 xl:max-h-none xl:max-w-lg 
+              className={`relative max-h-[25rem] max-w-[51rem] rounded-lg border border-[#60647872] bg-opacity-10 bg-gradient-to-b from-[#35374366]  to-[#24212b65]  p-6 xl:max-h-none xl:max-w-lg 
                             ${isHoveredPair1 ? "border-[#21222972] bg-[#24242779]" : "bg-[#9d94e9]"}`}
             >
               <CardHeader className="pt-0">
@@ -126,7 +127,7 @@ export default function Home() {
             <Card
               onMouseEnter={() => setIsHoveredPair2(true)}
               onMouseLeave={() => setIsHoveredPair2(false)}
-              className={`relative  max-w-[51rem] rounded-lg border border-[#60647872] bg-opacity-10 bg-gradient-to-b from-[#35374366]  to-[#24212b65]  p-6 xl:max-h-none xl:max-w-lg 
+              className={`relative max-h-[25rem] max-w-[51rem] rounded-lg border border-[#60647872] bg-opacity-10 bg-gradient-to-b from-[#35374366]  to-[#24212b65]  p-6 xl:max-h-none xl:max-w-lg 
                             ${isHoveredPair2 ? "border-[#21222972] bg-[#24242779]" : "bg-[#9d94e9]"}`}
             >
               <CardHeader className="pt-0">
@@ -169,7 +170,7 @@ export default function Home() {
                     onClick={() => startLoading("btn2")}
                     className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
                   >
-                    Visit
+                    <p>Visit</p>
                   </Button>
                 </Link>
                 <Link
@@ -230,7 +231,7 @@ export default function Home() {
             <Card
               onMouseEnter={() => setIsHoveredPair3(true)}
               onMouseLeave={() => setIsHoveredPair3(false)}
-              className={`relative max-w-[51rem] rounded-lg border border-[#60647872] bg-opacity-10 bg-gradient-to-b from-[#35374366]  to-[#24212b65]  p-6 xl:max-h-none xl:max-w-lg 
+              className={`relative max-h-[25rem] max-w-[51rem] rounded-lg border border-[#60647872] bg-opacity-10 bg-gradient-to-b from-[#35374366]  to-[#24212b65]  p-6 xl:max-h-none xl:max-w-lg 
                             ${isHoveredPair3 ? "border-[#21222972] bg-[#24242779]" : "bg-[#9d94e9]"}`}
             >
               <CardHeader className="pt-0">
@@ -271,7 +272,7 @@ export default function Home() {
                     onClick={() => startLoading("btn4")}
                     className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
                   >
-                    Visit
+                    <p>Visit</p>
                   </Button>
                 </Link>
                 <Link
@@ -397,7 +398,7 @@ export default function Home() {
                     onClick={() => startLoading("btn2")}
                     className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
                   >
-                    Visit
+                    <p>Visit</p>
                   </Button>
                 </Link>
                 <Link
@@ -467,7 +468,7 @@ export default function Home() {
                     onClick={() => startLoading("btn4")}
                     className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
                   >
-                    Visit
+                    <p>Visit</p>
                   </Button>
                 </Link>
                 <Link

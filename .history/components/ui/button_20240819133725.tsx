@@ -41,7 +41,7 @@ export interface ButtonProps
   loadingText?: string;
 }
 
-const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
+const LoadingButton = React.forwardRef<HTMLButtonElement, ButtonProps>(
   (
     {
       className,
@@ -104,6 +104,6 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     );
   }
 );
-Button.displayName = "Button";
+LoadingButton.displayName = "LoadingButton";
 
-export { Button, buttonVariants };
+export { LoadingButton, buttonVariants };

@@ -40,8 +40,8 @@ export default function Home() {
               </p>
             </div>
             <p className="flex max-w-[35rem] items-center justify-center pt-5 text-center text-xl text-[#d5d5d8]">
-              Developer, SaaS, full-stack and process design.
-              Passionate about technology and its impact on the world.
+              Developer, SaaS, full-stack and process design. Passionate about
+              technology and its impact on the world.
             </p>
           </div>
         </section>

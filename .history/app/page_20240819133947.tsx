@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 "use client";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -72,7 +73,7 @@ export default function Home() {
             <Card
               onMouseEnter={() => setIsHoveredPair1(true)}
               onMouseLeave={() => setIsHoveredPair1(false)}
-              className={`relative max-w-[51rem] rounded-lg border border-[#60647872] bg-opacity-10 bg-gradient-to-b from-[#35374366]  to-[#24212b65]  p-6 xl:max-h-none xl:max-w-lg 
+              className={`relative max-h-[25rem] max-w-[51rem] rounded-lg border border-[#60647872] bg-opacity-10 bg-gradient-to-b from-[#35374366]  to-[#24212b65]  p-6 xl:max-h-none xl:max-w-lg 
                             ${isHoveredPair1 ? "border-[#21222972] bg-[#24242779]" : "bg-[#9d94e9]"}`}
             >
               <CardHeader className="pt-0">
@@ -111,12 +112,10 @@ export default function Home() {
                 >
                   <Button
                     type="button"
-                    loading={loadingStates["btn1"] || false}
-                    loadingText="Loading..."
-                    onClick={() => startLoading("btn1")}
-                    className="flex w-full items-center justify-center bg-[#454166] shadow-lg hover:bg-[#454166]"
+                    loading={loadingStates}
+                    className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
                   >
-                    Visit
+                    <p>Visit</p>
                   </Button>
                 </Link>
               </div>
@@ -126,7 +125,7 @@ export default function Home() {
             <Card
               onMouseEnter={() => setIsHoveredPair2(true)}
               onMouseLeave={() => setIsHoveredPair2(false)}
-              className={`relative  max-w-[51rem] rounded-lg border border-[#60647872] bg-opacity-10 bg-gradient-to-b from-[#35374366]  to-[#24212b65]  p-6 xl:max-h-none xl:max-w-lg 
+              className={`relative max-h-[25rem] max-w-[51rem] rounded-lg border border-[#60647872] bg-opacity-10 bg-gradient-to-b from-[#35374366]  to-[#24212b65]  p-6 xl:max-h-none xl:max-w-lg 
                             ${isHoveredPair2 ? "border-[#21222972] bg-[#24242779]" : "bg-[#9d94e9]"}`}
             >
               <CardHeader className="pt-0">
@@ -164,12 +163,9 @@ export default function Home() {
                 >
                   <Button
                     type="button"
-                    loading={loadingStates["btn2"] || false}
-                    loadingText="Loading..."
-                    onClick={() => startLoading("btn2")}
                     className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
                   >
-                    Visit
+                    <p>Visit</p>
                   </Button>
                 </Link>
                 <Link
@@ -178,9 +174,6 @@ export default function Home() {
                 >
                   <Button
                     type="button"
-                    loading={loadingStates["btn3"] || false}
-                    loadingText="Loading..."
-                    onClick={() => startLoading("btn3")}
                     className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
                   >
                     <Image
@@ -230,7 +223,7 @@ export default function Home() {
             <Card
               onMouseEnter={() => setIsHoveredPair3(true)}
               onMouseLeave={() => setIsHoveredPair3(false)}
-              className={`relative max-w-[51rem] rounded-lg border border-[#60647872] bg-opacity-10 bg-gradient-to-b from-[#35374366]  to-[#24212b65]  p-6 xl:max-h-none xl:max-w-lg 
+              className={`relative max-h-[25rem] max-w-[51rem] rounded-lg border border-[#60647872] bg-opacity-10 bg-gradient-to-b from-[#35374366]  to-[#24212b65]  p-6 xl:max-h-none xl:max-w-lg 
                             ${isHoveredPair3 ? "border-[#21222972] bg-[#24242779]" : "bg-[#9d94e9]"}`}
             >
               <CardHeader className="pt-0">
@@ -266,12 +259,9 @@ export default function Home() {
                 >
                   <Button
                     type="button"
-                    loading={loadingStates["btn4"] || false}
-                    loadingText="Loading..."
-                    onClick={() => startLoading("btn4")}
                     className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
                   >
-                    Visit
+                    <p>Visit</p>
                   </Button>
                 </Link>
                 <Link
@@ -280,9 +270,6 @@ export default function Home() {
                 >
                   <Button
                     type="button"
-                    loading={loadingStates["btn5"] || false}
-                    loadingText="Loading..."
-                    onClick={() => startLoading("btn5")}
                     className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
                   >
                     <Image
@@ -334,23 +321,20 @@ export default function Home() {
                     </ul>
                   </div>
                 </div>
-              </CardContent>
-              <div className="mx-auto flex w-full items-center justify-center pt-8 hover:bg-none">
-                <Link
-                  className="flex w-2/3 items-center justify-center"
-                  href="https://www.graphalytics.co/"
-                >
-                  <Button
-                    type="button"
-                    loading={loadingStates["btn1"] || false}
-                    loadingText="Loading..."
-                    onClick={() => startLoading("btn3")}
-                    className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
+                <div className="mx-auto flex w-full items-center justify-center pt-8 hover:bg-none">
+                  <Link
+                    className="flex w-2/3 items-center justify-center"
+                    href="https://www.graphalytics.co/"
                   >
-                    Visit
-                  </Button>
-                </Link>
-              </div>
+                    <Button
+                      type="button"
+                      className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
+                    >
+                      <p>Visit</p>
+                    </Button>
+                  </Link>
+                </div>
+              </CardContent>
             </Card>
           </div>
           <div className="flex flex-col">
@@ -384,42 +368,36 @@ export default function Home() {
                     </ul>
                   </div>
                 </div>
+                <div className="mx-auto flex w-full flex-row items-center justify-center space-x-5 pt-8 hover:bg-none">
+                  <Link
+                    className="flex w-2/3 items-center justify-center"
+                    href="https://yourestate.vercel.app/"
+                  >
+                    <Button
+                      type="button"
+                      className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
+                    >
+                      <p>Visit</p>
+                    </Button>
+                  </Link>
+                  <Link
+                    className="flex w-2/3 items-center justify-center"
+                    href="https://github.com/Fortivera/yourestate"
+                  >
+                    <Button
+                      type="button"
+                      className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
+                    >
+                      <Image
+                        src="/githublight.svg"
+                        alt={"GitHub"}
+                        width={24}
+                        height={24}
+                      />
+                    </Button>
+                  </Link>
+                </div>
               </CardContent>
-              <div className="mx-auto flex w-full flex-row items-center justify-center space-x-5 pt-8 hover:bg-none">
-                <Link
-                  className="flex w-2/3 items-center justify-center"
-                  href="https://yourestate.vercel.app/"
-                >
-                  <Button
-                    type="button"
-                    loading={loadingStates["btn2"] || false}
-                    loadingText="Loading..."
-                    onClick={() => startLoading("btn2")}
-                    className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
-                  >
-                    Visit
-                  </Button>
-                </Link>
-                <Link
-                  className="flex w-2/3 items-center justify-center"
-                  href="https://github.com/Fortivera/yourestate"
-                >
-                  <Button
-                    type="button"
-                    loading={loadingStates["btn3"] || false}
-                    loadingText="Loading..."
-                    onClick={() => startLoading("btn3")}
-                    className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
-                  >
-                    <Image
-                      src="/githublight.svg"
-                      alt={"GitHub"}
-                      width={24}
-                      height={24}
-                    />
-                  </Button>
-                </Link>
-              </div>
             </Card>
           </div>
           <div className="flex flex-col">
@@ -454,42 +432,36 @@ export default function Home() {
                     </ul>
                   </div>
                 </div>
+                <div className="mx-auto flex w-full flex-row items-center justify-center space-x-5 pt-8 hover:bg-none">
+                  <Link
+                    className="flex w-2/3 items-center justify-center"
+                    href="https://justcook.fly.dev"
+                  >
+                    <Button
+                      type="button"
+                      className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
+                    >
+                      <p>Visit</p>
+                    </Button>
+                  </Link>
+                  <Link
+                    className="flex w-2/3 items-center justify-center"
+                    href="https://github.com/Fortivera/Recipe_webapp"
+                  >
+                    <Button
+                      type="button"
+                      className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
+                    >
+                      <Image
+                        src="/githublight.svg"
+                        alt={"GitHub"}
+                        width={24}
+                        height={24}
+                      />
+                    </Button>
+                  </Link>
+                </div>
               </CardContent>
-              <div className="mx-auto flex w-full flex-row items-center justify-center space-x-5 pt-8 hover:bg-none">
-                <Link
-                  className="flex w-2/3 items-center justify-center"
-                  href="https://justcook.fly.dev"
-                >
-                  <Button
-                    type="button"
-                    loading={loadingStates["btn4"] || false}
-                    loadingText="Loading..."
-                    onClick={() => startLoading("btn4")}
-                    className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
-                  >
-                    Visit
-                  </Button>
-                </Link>
-                <Link
-                  className="flex w-2/3 items-center justify-center"
-                  href="https://github.com/Fortivera/Recipe_webapp"
-                >
-                  <Button
-                    type="button"
-                    loading={loadingStates["btn5"] || false}
-                    loadingText="Loading..."
-                    onClick={() => startLoading("btn5")}
-                    className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
-                  >
-                    <Image
-                      src="/githublight.svg"
-                      alt={"GitHub"}
-                      width={24}
-                      height={24}
-                    />
-                  </Button>
-                </Link>
-              </div>
             </Card>
           </div>
         </section>
