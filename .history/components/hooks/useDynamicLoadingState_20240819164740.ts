@@ -1,11 +1,12 @@
 /* eslint-disable prettier/prettier */
+// useDynamicLoadingState.ts
 'use client';
 import { useState, useEffect } from 'react';
 
 const useDynamicLoadingState = () => {
     const [loadingStates, setLoadingStates] = useState<Record<string, boolean>>({});
 
-    // Reset loading state when the page visibility changes (e.g., when the user navigates back)
+    // Reset loading state when the page visibility changes
     useEffect(() => {
         const handleVisibilityChange = () => {
             if (document.visibilityState === 'visible') {
@@ -20,7 +21,7 @@ const useDynamicLoadingState = () => {
         };
     }, []);
 
-    // Handle Safari-specific caching issues by resetting state when the page unloads
+    // Handle Safari-specific caching issues
     useEffect(() => {
         const handleUnload = () => {
             setLoadingStates({});
@@ -28,12 +29,10 @@ const useDynamicLoadingState = () => {
 
         window.addEventListener('beforeunload', handleUnload);
         window.addEventListener('pagehide', handleUnload);
-        window.addEventListener('unload', handleUnload); // Adding unload event for additional safety
 
         return () => {
             window.removeEventListener('beforeunload', handleUnload);
             window.removeEventListener('pagehide', handleUnload);
-            window.removeEventListener('unload', handleUnload);
         };
     }, []);
 
@@ -41,7 +40,11 @@ const useDynamicLoadingState = () => {
         setLoadingStates((prev) => ({ ...prev, [id]: true }));
     };
 
-    return { loadingStates, startLoading };
+    const resetLoading = () => {
+        setLoadingStates({});
+    };
+
+    return { loadingStates, startLoading, resetLoading };
 };
 
 export default useDynamicLoadingState;
