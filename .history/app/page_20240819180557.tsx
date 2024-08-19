@@ -109,11 +109,12 @@ export default function Home() {
                 >
                   <Button
                     type="button"
-                    className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
+                    className="w-full bg-[#454166] shadow-lg hover:bg-[#454166] active:scale-95 active:shadow-none"
                   >
                     Visit
                   </Button>
                 </Link>
+
               </div>
             </Card>
           </div>
