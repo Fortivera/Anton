@@ -11,8 +11,30 @@ export default function Home() {
   const [isHoveredPair1, setIsHoveredPair1] = useState<boolean>(false);
   const [isHoveredPair2, setIsHoveredPair2] = useState<boolean>(false);
   const [isHoveredPair3, setIsHoveredPair3] = useState<boolean>(false);
+  const [loadingStates, setLoadingStates] = useState<{ [key: string]: boolean }>({});
+  const router = useRouter();
 
-  const { loadingStates, startLoading } = useDynamicLoadingState();
+  const startLoading = async (btnKey: string, url: string) => {
+    // Set loading state for the specific button
+    setLoadingStates((prev) => ({
+      ...prev,
+      [btnKey]: true,
+    }));
+
+    try {
+      // Perform navigation or any other async operation
+      await router.push(url);
+    } catch (error) {
+      console.error('Navigation failed:', error);
+    } finally {
+      // Reset loading state after navigation
+      setLoadingStates((prev) => ({
+        ...prev,
+        [btnKey]: false,
+      }));
+    }
+  };
+
 
   return (
     <div className="flex min-h-screen w-full flex-col text-base text-white">
@@ -297,9 +319,9 @@ export default function Home() {
               </div>
             </Card>
           </div>
-        </section>
+        </section >
         {/* Mobile view */}
-        <section
+        <section section
           className="grid grid-cols-1 justify-items-center gap-8 py-12 sm:hidden"
           id="projects"
         >

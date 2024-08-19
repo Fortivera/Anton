@@ -12,7 +12,7 @@ export default function Home() {
   const [isHoveredPair2, setIsHoveredPair2] = useState<boolean>(false);
   const [isHoveredPair3, setIsHoveredPair3] = useState<boolean>(false);
 
-  const { loadingStates, startLoading } = useDynamicLoadingState();
+
 
   return (
     <div className="flex min-h-screen w-full flex-col text-base text-white">
@@ -114,7 +114,29 @@ export default function Home() {
                     type="button"
                     loading={loadingStates["btn1"] || false}
                     loadingText="Loading..."
-                    onClick={() => startLoading("btn1")}
+                    onClick={() => startLoaconst [loadingStates, setLoadingStates] = useState<{ [key: string]: boolean }>({});
+  const router = useRouter();
+
+  const startLoading = async (btnKey: string, url: string) => {
+    // Set loading state for the specific button
+    setLoadingStates((prev) => ({
+      ...prev,
+      [btnKey]: true,
+    }));
+
+    try {
+      // Perform navigation or any other async operation
+      await router.push(url);
+    } catch (error) {
+      console.error('Navigation failed:', error);
+    } finally {
+      // Reset loading state after navigation
+      setLoadingStates((prev) => ({
+        ...prev,
+        [btnKey]: false,
+      }));
+    }
+  };ding("btn1")}
                     className="flex w-full items-center justify-center bg-[#454166] shadow-lg hover:bg-[#454166]"
                   >
                     Visit
@@ -297,12 +319,12 @@ export default function Home() {
               </div>
             </Card>
           </div>
-        </section>
-        {/* Mobile view */}
-        <section
-          className="grid grid-cols-1 justify-items-center gap-8 py-12 sm:hidden"
-          id="projects"
-        >
+        </section >
+    {/* Mobile view */ }
+    < section
+  className = "grid grid-cols-1 justify-items-center gap-8 py-12 sm:hidden"
+  id = "projects"
+    >
           <div className="flex flex-col">
             <Card
               className={`relative rounded-lg border border-[#60647872] bg-[#9d94e9] bg-opacity-10 bg-gradient-to-b  from-[#35374366] to-[#24212b65] p-6 hover:border-[#21222972] hover:bg-[#24242779]`}
@@ -493,7 +515,7 @@ export default function Home() {
               </div>
             </Card>
           </div>
-        </section >
+        </ >
       </main >
     </div >
   );

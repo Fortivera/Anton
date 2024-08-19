@@ -12,7 +12,7 @@ export default function Home() {
   const [isHoveredPair2, setIsHoveredPair2] = useState<boolean>(false);
   const [isHoveredPair3, setIsHoveredPair3] = useState<boolean>(false);
 
-  const { loadingStates, startLoading } = useDynamicLoadingState();
+
 
   return (
     <div className="flex min-h-screen w-full flex-col text-base text-white">
@@ -297,9 +297,9 @@ export default function Home() {
               </div>
             </Card>
           </div>
-        </section>
+        </section >
         {/* Mobile view */}
-        <section
+        <section section
           className="grid grid-cols-1 justify-items-center gap-8 py-12 sm:hidden"
           id="projects"
         >

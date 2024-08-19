@@ -16,7 +16,11 @@ const useDynamicLoadingState = () => {
 
     const startLoading = (id: string) => {
         setLoadingStates((prev) => ({ ...prev, [id]: true }));
-
+        setTimeout(() => {
+            if (isMounted.current) {
+                setLoadingStates((prev) => ({ ...prev, [id]: false }));
+            }
+        }, 2000);
     };
 
     return { loadingStates, startLoading };
