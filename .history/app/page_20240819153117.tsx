@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
 import { useState } from "react";
 import SocialLinks from "@/components/Footer";
-
+import Link from "next/link";
 import useDynamicLoadingState from "@/components/hooks/useDynamicLoadingState";
 import { useRouter } from "next/navigation";
 
@@ -19,7 +19,7 @@ export default function Home() {
   const handleButtonClick = async (id: string, url: string) => {
     startLoading(id);
     await router.push(url);
-    // router.refresh(); // Optionally refresh to ensure state reset
+    router.refresh(); // Optionally refresh to ensure state reset
   };
   return (
     <div className="flex min-h-screen w-full flex-col text-base text-white">
@@ -176,12 +176,7 @@ export default function Home() {
                     type="button"
                     loading={loadingStates["btn2"] || false}
                     loadingText="Loading..."
-                    onClick={() =>
-                      handleButtonClick(
-                        "btn2",
-                        "https://yourestate.vercel.app/"
-                      )
-                    }
+                    onClick={() => handleButtonClick("btn2", "https://yourestate.vercel.app/")}
                     className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
                   >
                     Visit
@@ -195,12 +190,7 @@ export default function Home() {
                     type="button"
                     loading={loadingStates["btn3"] || false}
                     loadingText="Loading..."
-                    onClick={() =>
-                      handleButtonClick(
-                        "btn3",
-                        "https://github.com/Fortivera/yourestate"
-                      )
-                    }
+                    onClick={() => handleButtonClick("btn3", "https://github.com/Fortivera/yourestate")}
                     className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
                   >
                     <Image
@@ -280,36 +270,29 @@ export default function Home() {
                 </div>
               </CardContent>
               <div className="mx-auto flex w-full flex-row items-center justify-center space-x-5 pt-8 hover:bg-none">
-                <div
+                <Link
                   className="flex w-[38%] items-center justify-center"
-                // href="https://justcook.fly.dev"
+                  href="https://justcook.fly.dev"
                 >
                   <Button
                     type="button"
                     loading={loadingStates["btn4"] || false}
                     loadingText="Loading..."
-                    onClick={() =>
-                      handleButtonClick("btn4", "https://justcook.fly.dev")
-                    }
+                    onClick={() => startLoading("btn4")}
                     className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
                   >
                     Visit
                   </Button>
-                </div>
-                <div
+                </Link>
+                <Link
                   className="flex w-[38%] items-center justify-center"
-                // href="https://github.com/Fortivera/Recipe_webapp"
+                  href="https://github.com/Fortivera/Recipe_webapp"
                 >
                   <Button
                     type="button"
                     loading={loadingStates["btn5"] || false}
                     loadingText="Loading..."
-                    onClick={() =>
-                      handleButtonClick(
-                        "btn5",
-                        "https://github.com/Fortivera/Recipe_webapp"
-                      )
-                    }
+                    onClick={() => startLoading("btn5")}
                     className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
                   >
                     <Image
@@ -319,7 +302,7 @@ export default function Home() {
                       height={24}
                     />
                   </Button>
-                </div>
+                </Link>
               </div>
             </Card>
           </div>
@@ -363,22 +346,20 @@ export default function Home() {
                 </div>
               </CardContent>
               <div className="mx-auto flex w-full items-center justify-center pt-8 hover:bg-none">
-                <div
+                <Link
                   className="flex w-2/3 items-center justify-center"
-                // href="https://www.graphalytics.co/"
+                  href="https://www.graphalytics.co/"
                 >
                   <Button
                     type="button"
                     loading={loadingStates["btn1"] || false}
                     loadingText="Loading..."
-                    onClick={() =>
-                      handleButtonClick("btn1", "https://www.graphalytics.co/")
-                    }
+                    onClick={() => startLoading("btn3")}
                     className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
                   >
                     Visit
                   </Button>
-                </div>
+                </Link>
               </div>
             </Card>
           </div>
@@ -415,39 +396,29 @@ export default function Home() {
                 </div>
               </CardContent>
               <div className="mx-auto flex w-full flex-row items-center justify-center space-x-5 pt-8 hover:bg-none">
-                <div
+                <Link
                   className="flex w-2/3 items-center justify-center"
-                // href="https://yourestate.vercel.app/"
+                  href="https://yourestate.vercel.app/"
                 >
                   <Button
                     type="button"
                     loading={loadingStates["btn2"] || false}
                     loadingText="Loading..."
-                    onClick={() =>
-                      handleButtonClick(
-                        "btn2",
-                        "https://yourestate.vercel.app/"
-                      )
-                    }
+                    onClick={() => startLoading("btn2")}
                     className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
                   >
                     Visit
                   </Button>
-                </div>
-                <div
+                </Link>
+                <Link
                   className="flex w-2/3 items-center justify-center"
-                // href="https://github.com/Fortivera/yourestate"
+                  href="https://github.com/Fortivera/yourestate"
                 >
                   <Button
                     type="button"
                     loading={loadingStates["btn3"] || false}
                     loadingText="Loading..."
-                    onClick={() =>
-                      handleButtonClick(
-                        "btn3",
-                        "https://github.com/Fortivera/yourestate"
-                      )
-                    }
+                    onClick={() => startLoading("btn3")}
                     className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
                   >
                     <Image
@@ -457,7 +428,7 @@ export default function Home() {
                       height={24}
                     />
                   </Button>
-                </div>
+                </Link>
               </div>
             </Card>
           </div>
@@ -495,36 +466,29 @@ export default function Home() {
                 </div>
               </CardContent>
               <div className="mx-auto flex w-full flex-row items-center justify-center space-x-5 pt-8 hover:bg-none">
-                <div
+                <Link
                   className="flex w-2/3 items-center justify-center"
-                // href="https://justcook.fly.dev"
+                  href="https://justcook.fly.dev"
                 >
                   <Button
                     type="button"
                     loading={loadingStates["btn4"] || false}
                     loadingText="Loading..."
-                    onClick={() =>
-                      handleButtonClick("btn4", "https://justcook.fly.dev")
-                    }
+                    onClick={() => startLoading("btn4")}
                     className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
                   >
                     Visit
                   </Button>
-                </div>
-                <div
+                </Link>
+                <Link
                   className="flex w-2/3 items-center justify-center"
-                // href="https://github.com/Fortivera/Recipe_webapp"
+                  href="https://github.com/Fortivera/Recipe_webapp"
                 >
                   <Button
                     type="button"
                     loading={loadingStates["btn5"] || false}
                     loadingText="Loading..."
-                    onClick={() =>
-                      handleButtonClick(
-                        "btn5",
-                        "https://github.com/Fortivera/Recipe_webapp"
-                      )
-                    }
+                    onClick={() => startLoading("btn5")}
                     className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
                   >
                     <Image
@@ -534,12 +498,12 @@ export default function Home() {
                       height={24}
                     />
                   </Button>
-                </div>
+                </Link>
               </div>
             </Card>
           </div>
-        </section>
-      </main>
-    </div>
+        </section >
+      </main >
+    </div >
   );
 }

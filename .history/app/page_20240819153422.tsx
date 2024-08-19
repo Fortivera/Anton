@@ -19,7 +19,7 @@ export default function Home() {
   const handleButtonClick = async (id: string, url: string) => {
     startLoading(id);
     await router.push(url);
-    // router.refresh(); // Optionally refresh to ensure state reset
+    router.refresh(); // Optionally refresh to ensure state reset
   };
   return (
     <div className="flex min-h-screen w-full flex-col text-base text-white">

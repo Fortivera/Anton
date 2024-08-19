@@ -1,11 +1,11 @@
 /* eslint-disable prettier/prettier */
 'use client';
 import { useState, useEffect } from 'react';
-
+import { useRouter } from 'next/navigation';
 
 const useDynamicLoadingState = () => {
     const [loadingStates, setLoadingStates] = useState<Record<string, boolean>>({});
-
+    const router = useRouter();
 
     useEffect(() => {
         const handleVisibilityChange = () => {
