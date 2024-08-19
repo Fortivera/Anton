@@ -21,7 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn("min-h-screen antialiased", inter.className)}>
+      <body
+        className={cn("min-h-screen antialiased", inter.className)}
+      >
         {children}
         <Analytics />
       </body>
