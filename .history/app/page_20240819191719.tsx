@@ -11,6 +11,7 @@ export default function Home() {
   const [isHoveredPair2, setIsHoveredPair2] = useState<boolean>(false);
   const [isHoveredPair3, setIsHoveredPair3] = useState<boolean>(false);
 
+
   return (
     <div className="flex min-h-screen w-full flex-col text-base text-white">
       <main className="mx-auto flex w-full flex-grow flex-col bg-[#131313] p-6">
@@ -110,7 +111,9 @@ export default function Home() {
                 >
                   <Button
                     type="button"
-                    className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
+                    loadingText="Loading..."
+                    onClick={() => handleButtonClick()}
+                    className="flex w-full items-center justify-center bg-[#454166] shadow-lg hover:bg-[#454166]"
                   >
                     Visit
                   </Button>
@@ -122,7 +125,7 @@ export default function Home() {
             <Card
               onMouseEnter={() => setIsHoveredPair2(true)}
               onMouseLeave={() => setIsHoveredPair2(false)}
-              className={`relative max-w-[51rem] rounded-lg border border-[#60647872] bg-opacity-10 bg-gradient-to-b from-[#35374366]  to-[#24212b65]  p-6 xl:max-h-none xl:max-w-lg 
+              className={`relative  max-w-[51rem] rounded-lg border border-[#60647872] bg-opacity-10 bg-gradient-to-b from-[#35374366]  to-[#24212b65]  p-6 xl:max-h-none xl:max-w-lg 
                             ${isHoveredPair2 ? "border-[#21222972] bg-[#24242779]" : "bg-[#9d94e9]"}`}
             >
               <CardHeader className="pt-0">
@@ -161,6 +164,9 @@ export default function Home() {
                 >
                   <Button
                     type="button"
+                    loading={isLoading}
+                    loadingText="Loading..."
+                    onClick={() => handleButtonClick()}
                     className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
                   >
                     Visit
@@ -173,6 +179,9 @@ export default function Home() {
                 >
                   <Button
                     type="button"
+                    loading={isLoading}
+                    loadingText="Loading..."
+                    onClick={() => handleButtonClick()}
                     className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
                   >
                     <Image
@@ -259,6 +268,9 @@ export default function Home() {
                 >
                   <Button
                     type="button"
+                    loading={isLoading}
+                    loadingText="Loading..."
+                    onClick={() => handleButtonClick()}
                     className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
                   >
                     Visit
@@ -271,6 +283,9 @@ export default function Home() {
                 >
                   <Button
                     type="button"
+                    loading={isLoading}
+                    loadingText="Loading..."
+                    onClick={() => handleButtonClick()}
                     className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
                   >
                     <Image
@@ -322,21 +337,24 @@ export default function Home() {
                     </ul>
                   </div>
                 </div>
-                <div className="mx-auto flex w-full items-center justify-center pt-8 hover:bg-none">
-                  <Link
-                    className="flex w-2/3 items-center justify-center"
-                    href="https://www.graphalytics.co/"
-                    target="_blank"
-                  >
-                    <Button
-                      type="button"
-                      className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
-                    >
-                      Visit
-                    </Button>
-                  </Link>
-                </div>
               </CardContent>
+              <div className="mx-auto flex w-full items-center justify-center pt-8 hover:bg-none">
+                <Link
+                  className="flex w-2/3 items-center justify-center"
+                  href="https://www.graphalytics.co/"
+                  target="_blank"
+                >
+                  <Button
+                    type="button"
+                    loading={isLoading}
+                    loadingText="Loading..."
+                    onClick={() => handleButtonClick()}
+                    className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
+                  >
+                    Visit
+                  </Button>
+                </Link>
+              </div>
             </Card>
           </div>
           <div className="flex flex-col">
@@ -370,38 +388,44 @@ export default function Home() {
                     </ul>
                   </div>
                 </div>
-                <div className="mx-auto flex w-full flex-row items-center justify-center space-x-5 pt-8 hover:bg-none">
-                  <Link
-                    className="flex w-2/3 items-center justify-center"
-                    href="https://yourestate.vercel.app/"
-                    target="_blank"
-                  >
-                    <Button
-                      type="button"
-                      className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
-                    >
-                      Visit
-                    </Button>
-                  </Link>
-                  <Link
-                    className="flex w-2/3 items-center justify-center"
-                    href="https://github.com/Fortivera/yourestate"
-                    target="_blank"
-                  >
-                    <Button
-                      type="button"
-                      className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
-                    >
-                      <Image
-                        src="/githublight.svg"
-                        alt={"GitHub"}
-                        width={24}
-                        height={24}
-                      />
-                    </Button>
-                  </Link>
-                </div>
               </CardContent>
+              <div className="mx-auto flex w-full flex-row items-center justify-center space-x-5 pt-8 hover:bg-none">
+                <Link
+                  className="flex w-2/3 items-center justify-center"
+                  href="https://yourestate.vercel.app/"
+                  target="_blank"
+                >
+                  <Button
+                    type="button"
+                    loading={isLoading}
+                    loadingText="Loading..."
+                    onClick={() => handleButtonClick()}
+                    className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
+                  >
+                    Visit
+                  </Button>
+                </Link>
+                <Link
+                  className="flex w-2/3 items-center justify-center"
+                  href="https://github.com/Fortivera/yourestate"
+                  target="_blank"
+                >
+                  <Button
+                    type="button"
+                    loading={isLoading}
+                    loadingText="Loading..."
+                    onClick={() => handleButtonClick()}
+                    className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
+                  >
+                    <Image
+                      src="/githublight.svg"
+                      alt={"GitHub"}
+                      width={24}
+                      height={24}
+                    />
+                  </Button>
+                </Link>
+              </div>
             </Card>
           </div>
           <div className="flex flex-col">
@@ -436,38 +460,44 @@ export default function Home() {
                     </ul>
                   </div>
                 </div>
-                <div className="mx-auto flex w-full flex-row items-center justify-center space-x-5 pt-8 hover:bg-none">
-                  <Link
-                    className="flex w-2/3 items-center justify-center"
-                    href="https://justcook.fly.dev"
-                    target="_blank"
-                  >
-                    <Button
-                      type="button"
-                      className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
-                    >
-                      <p>Visit</p>
-                    </Button>
-                  </Link>
-                  <Link
-                    className="flex w-2/3 items-center justify-center"
-                    href="https://github.com/Fortivera/Recipe_webapp"
-                    target="_blank"
-                  >
-                    <Button
-                      type="button"
-                      className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
-                    >
-                      <Image
-                        src="/githublight.svg"
-                        alt={"GitHub"}
-                        width={24}
-                        height={24}
-                      />
-                    </Button>
-                  </Link>
-                </div>
               </CardContent>
+              <div className="mx-auto flex w-full flex-row items-center justify-center space-x-5 pt-8 hover:bg-none">
+                <Link
+                  className="flex w-2/3 items-center justify-center"
+                  href="https://justcook.fly.dev"
+                  target="_blank"
+                >
+                  <Button
+                    type="button"
+                    loading={isLoading}
+                    loadingText="Loading..."
+                    onClick={() => handleButtonClick()}
+                    className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
+                  >
+                    Visit
+                  </Button>
+                </Link>
+                <Link
+                  className="flex w-2/3 items-center justify-center"
+                  href="https://github.com/Fortivera/Recipe_webapp"
+                  target="_blank"
+                >
+                  <Button
+                    type="button"
+                    loading={isLoading}
+                    loadingText="Loading..."
+                    onClick={() => handleButtonClick()}
+                    className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
+                  >
+                    <Image
+                      src="/githublight.svg"
+                      alt={"GitHub"}
+                      width={24}
+                      height={24}
+                    />
+                  </Button>
+                </Link>
+              </div>
             </Card>
           </div>
         </section>

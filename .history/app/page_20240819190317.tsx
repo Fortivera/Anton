@@ -106,7 +106,6 @@ export default function Home() {
                 <Link
                   className="flex w-2/3 items-center justify-center"
                   href="https://www.graphalytics.co/"
-                  target="_blank"
                 >
                   <Button
                     type="button"
@@ -157,7 +156,6 @@ export default function Home() {
                 <Link
                   className="flex w-[38%] items-center justify-center"
                   href="https://yourestate.vercel.app/"
-                  target="_blank"
                 >
                   <Button
                     type="button"
@@ -169,7 +167,6 @@ export default function Home() {
                 <Link
                   className="flex w-[38%] items-center justify-center"
                   href="https://github.com/Fortivera/yourestate"
-                  target="_blank"
                 >
                   <Button
                     type="button"
@@ -255,7 +252,6 @@ export default function Home() {
                 <Link
                   className="flex w-[38%] items-center justify-center"
                   href="https://justcook.fly.dev"
-                  target="_blank"
                 >
                   <Button
                     type="button"
@@ -267,7 +263,6 @@ export default function Home() {
                 <Link
                   className="flex w-[38%] items-center justify-center"
                   href="https://github.com/Fortivera/Recipe_webapp"
-                  target="_blank"
                 >
                   <Button
                     type="button"
@@ -326,7 +321,6 @@ export default function Home() {
                   <Link
                     className="flex w-2/3 items-center justify-center"
                     href="https://www.graphalytics.co/"
-                    target="_blank"
                   >
                     <Button
                       type="button"
@@ -374,7 +368,6 @@ export default function Home() {
                   <Link
                     className="flex w-2/3 items-center justify-center"
                     href="https://yourestate.vercel.app/"
-                    target="_blank"
                   >
                     <Button
                       type="button"
@@ -386,7 +379,6 @@ export default function Home() {
                   <Link
                     className="flex w-2/3 items-center justify-center"
                     href="https://github.com/Fortivera/yourestate"
-                    target="_blank"
                   >
                     <Button
                       type="button"
@@ -440,7 +432,6 @@ export default function Home() {
                   <Link
                     className="flex w-2/3 items-center justify-center"
                     href="https://justcook.fly.dev"
-                    target="_blank"
                   >
                     <Button
                       type="button"
@@ -452,7 +443,6 @@ export default function Home() {
                   <Link
                     className="flex w-2/3 items-center justify-center"
                     href="https://github.com/Fortivera/Recipe_webapp"
-                    target="_blank"
                   >
                     <Button
                       type="button"
