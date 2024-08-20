@@ -163,7 +163,7 @@ export default function Home() {
                     type="button"
                     className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
                   >
-                    <p>Visit</p>
+                    Visit
                   </Button>
                 </Link>
                 <Link
@@ -261,7 +261,7 @@ export default function Home() {
                     type="button"
                     className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
                   >
-                    <p>Visit</p>
+                    Visit
                   </Button>
                 </Link>
                 <Link
@@ -332,7 +332,7 @@ export default function Home() {
                       type="button"
                       className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
                     >
-                      <p>Visit</p>
+                      Visit
                     </Button>
                   </Link>
                 </div>
@@ -380,7 +380,7 @@ export default function Home() {
                       type="button"
                       className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
                     >
-                      <p>Visit</p>
+                      Visit
                     </Button>
                   </Link>
                   <Link
