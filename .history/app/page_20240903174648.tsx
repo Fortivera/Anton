@@ -83,10 +83,8 @@ export default function Home() {
                 <div className="text-base">
                   <div className="flex flex-col space-y-5">
                     <p>
-                      <span className="font-bold text-[#a8a8a8]">
-                        Tech Stack:
-                      </span>{" "}
-                      Typescript, Next.js 14, Firebase, Stripe, D3.js, NoSQL
+                      Tech Stack: Typescript, Next.js 14, Firebase, Stripe,
+                      D3.js, NoSQL
                     </p>
                     <ul className="list-disc space-y-2 pl-4">
                       <li>
@@ -137,10 +135,7 @@ export default function Home() {
                 <div className="text-base">
                   <div className="flex flex-col space-y-5">
                     <p>
-                      <span className="font-bold text-[#a8a8a8]">
-                        Tech Stack:
-                      </span>{" "}
-                      Typescript, C#, Next.js 14, Azure, D3.js, SQL
+                      Tech Stack: Typescript, C#, Next.js 14, Azure, D3.js, SQL
                     </p>
                     <ul className="list-disc space-y-2 pl-4">
                       <li>
@@ -218,8 +213,8 @@ export default function Home() {
               <CardContent className="p-0 text-[#8b8f8f] shadow-sm shadow-[#4d4d4d]">
                 <Image
                   className="w-full"
-                  src={"/joyouslight.png"}
-                  alt={"Joyous Light Candles"}
+                  src={"/justcookit.png"}
+                  alt={"Justcookit"}
                   width={1500}
                   height={1500}
                 />
@@ -233,70 +228,13 @@ export default function Home() {
             >
               <CardHeader className="pt-0">
                 <CardTitle className="pt-0 text-lg font-semibold text-[#D1D1D2]">
-                  Joyous Light Candles
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="text-[#8b8f8f]">
-                <div className="text-base">
-                  <div className="flex flex-col space-y-5">
-                    <p>
-                      <span className="font-bold text-[#a8a8a8]">
-                        Tech Stack:
-                      </span>{" "}
-                      Javascript, Python, Shopify, Liquid, Apache Airflow,
-                      Docker
-                    </p>
-                    <ul className="list-disc space-y-2 pl-4">
-                      <li>E-commerce store for selling 100% beeswax candles</li>
-                      <li>
-                        Fully integrated with the Shopify CMS and custom Apache
-                        Airflow orchestration
-                      </li>
-                      <li>
-                        Equiped with automatic analytics and push notifications
-                        for stock tracking and orders
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </CardContent>
-              <div className="mx-auto flex w-full items-center justify-center pt-8 hover:bg-none">
-                <Link
-                  className="flex w-2/3 items-center justify-center"
-                  href="https://www.joyouslightcandles.ca/"
-                  target="_blank"
-                >
-                  <Button
-                    type="button"
-                    className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
-                  >
-                    <p>Visit</p>
-                  </Button>
-                </Link>
-              </div>
-            </Card>
-          </div>
-          <div className="flex flex-col-reverse xl:flex-row xl:space-x-10 xl:space-y-0">
-            <Card
-              onMouseEnter={() => setIsHoveredPair4(true)}
-              onMouseLeave={() => setIsHoveredPair4(false)}
-              className={`relative max-w-[51rem] rounded-lg border border-[#60647872] bg-opacity-10 bg-gradient-to-b from-[#35374366]  to-[#24212b65]  p-6 xl:max-h-none xl:max-w-lg 
-                            ${isHoveredPair4 ? "border-[#21222972] bg-[#24242779]" : "bg-[#9d94e9]"}`}
-            >
-              <CardHeader className="pt-0">
-                <CardTitle className="pt-0 text-lg font-semibold text-[#D1D1D2]">
                   Justcook
                 </CardTitle>
               </CardHeader>
               <CardContent className="text-[#8b8f8f]">
                 <div className="text-base">
                   <div className="flex flex-col space-y-5">
-                    <p>
-                      <span className="font-bold text-[#a8a8a8]">
-                        Tech Stack:
-                      </span>{" "}
-                      Python, Django, Amazon S3, PostgreSQL
-                    </p>
+                    <p>Tech Stack: Python, Django, Amazon S3, PostgreSQL</p>
                     <ul className="list-disc space-y-2 pl-4">
                       <li>
                         Recipe website featuring thousands of diverse dishes,
@@ -346,6 +284,75 @@ export default function Home() {
                 </Link>
               </div>
             </Card>
+          </div>
+          <div className="flex flex-col-reverse xl:flex-row xl:space-x-10 xl:space-y-0">
+            <Card
+              onMouseEnter={() => setIsHoveredPair4(true)}
+              onMouseLeave={() => setIsHoveredPair4(false)}
+              className={`relative max-w-[51rem] rounded-lg border border-[#60647872] bg-opacity-10 bg-gradient-to-b from-[#35374366]  to-[#24212b65]  p-6 xl:max-h-none xl:max-w-lg 
+                            ${isHoveredPair4 ? "border-[#21222972] bg-[#24242779]" : "bg-[#9d94e9]"}`}
+            >
+              <CardHeader className="pt-0">
+                <CardTitle className="pt-0 text-lg font-semibold text-[#D1D1D2]">
+                  Joyous Light Candles
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="text-[#8b8f8f]">
+                <div className="text-base">
+                  <div className="flex flex-col space-y-5">
+                    <p>
+                      <span className="text-[rgb(168 168 168)] font-bold">
+                        Tech Stack:
+                      </span>{" "}
+                      Javascript, Python, Shopify, Liquid, Apache Airflow,
+                      Docker
+                    </p>
+                    <ul className="list-disc space-y-2 pl-4">
+                      <li>E-commerce store for selling 100% beeswax candles</li>
+                      <li>
+                        Fully integrated with the Shopify CMS and custom Apache
+                        Airflow orchestration
+                      </li>
+                      <li>
+                        Equiped with automatic analytics and push notifications
+                        for stock tracking and orders
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+              <div className="mx-auto flex w-full flex-row items-center justify-center space-x-5 pt-8 hover:bg-none">
+                <Link
+                  className="flex w-[38%] items-center justify-center"
+                  href="https://yourestate.vercel.app/"
+                  target="_blank"
+                >
+                  <Button
+                    type="button"
+                    className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
+                  >
+                    <p>Visit</p>
+                  </Button>
+                </Link>
+                <Link
+                  className="flex w-[38%] items-center justify-center"
+                  href="https://github.com/Fortivera/yourestate"
+                  target="_blank"
+                >
+                  <Button
+                    type="button"
+                    className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
+                  >
+                    <Image
+                      src="/githublight.svg"
+                      alt={"GitHub"}
+                      width={24}
+                      height={24}
+                    />
+                  </Button>
+                </Link>
+              </div>
+            </Card>
             <Card
               onMouseEnter={() => setIsHoveredPair4(true)}
               onMouseLeave={() => setIsHoveredPair4(false)}
@@ -355,8 +362,8 @@ export default function Home() {
               <CardContent className="p-0 text-[#8b8f8f] shadow-sm shadow-[#4d4d4d]">
                 <Image
                   className="w-full"
-                  src={"/justcookit.png"}
-                  alt={"Justcookit"}
+                  src={"/yourestate.png"}
+                  alt={"YourEstate"}
                   width={1500}
                   height={1500}
                 />
@@ -382,10 +389,8 @@ export default function Home() {
                 <div className="text-sm">
                   <div className="flex max-h-[25rem] flex-col space-y-5 overflow-y-auto">
                     <p>
-                      <span className="font-bold text-[#a8a8a8]">
-                        Tech Stack:
-                      </span>{" "}
-                      Next.js 14, Typescript, Firebase, Stripe, D3.js
+                      Tech Stack: Next.js 14, Typescript, Firebase, Stripe,
+                      D3.js
                     </p>
                     <ul className="list-disc space-y-2 pl-4">
                       <li>
@@ -433,10 +438,7 @@ export default function Home() {
                 <div className="text-sm">
                   <div className="flex max-h-[25rem] flex-col space-y-5 overflow-y-auto">
                     <p>
-                      <span className="font-bold text-[#a8a8a8]">
-                        Tech Stack:
-                      </span>{" "}
-                      Typescript, C#, Next.js 14, Azure, D3.js, SQL
+                      Tech Stack: Typescript, C#, Next.js 14, Azure, D3.js, SQL
                     </p>
                     <ul className="list-disc space-y-2 pl-4">
                       <li>
@@ -494,57 +496,6 @@ export default function Home() {
             >
               <CardHeader className="p-0 pb-4">
                 <CardTitle className="text-lg font-semibold text-[#D1D1D2] ">
-                  Joyous Light Candles
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="p-0 text-[#8b8f8f]">
-                <div className="text-sm">
-                  <div className="flex max-h-[25rem] flex-col space-y-5 overflow-y-auto">
-                    <p>
-                      <span className="font-bold text-[#a8a8a8]">
-                        Tech Stack:
-                      </span>{" "}
-                      Typescript, C#, Next.js 14, Azure, D3.js, SQL
-                    </p>
-                    <ul className="list-disc space-y-2 pl-4">
-                      <li>
-                        A modular real estate solution that simplifies property
-                        management
-                      </li>
-                      <li>
-                        Designed to integrate data analytics and visualization
-                        capabilities within a single platform
-                      </li>
-                      <li>
-                        Scalable and user-friendly, suitable for property owners
-                        at all experience levels
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="mx-auto flex w-full items-center justify-center pt-8 hover:bg-none">
-                  <Link
-                    className="flex w-2/3 items-center justify-center"
-                    href="https://www.joyouslightcandles.ca/"
-                    target="_blank"
-                  >
-                    <Button
-                      type="button"
-                      className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
-                    >
-                      <p>Visit</p>
-                    </Button>
-                  </Link>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-          <div className="flex flex-col">
-            <Card
-              className={`relative rounded-lg border border-[#60647872] bg-[#9d94e9] bg-opacity-10 bg-gradient-to-b  from-[#35374366] to-[#24212b65] p-6 hover:border-[#21222972] hover:bg-[#24242779]`}
-            >
-              <CardHeader className="p-0 pb-4">
-                <CardTitle className="text-lg font-semibold text-[#D1D1D2] ">
                   Justcook
                 </CardTitle>
               </CardHeader>
@@ -552,10 +503,8 @@ export default function Home() {
                 <div className="text-sm">
                   <div className="flex max-h-[25rem] flex-col space-y-5 overflow-y-auto">
                     <p>
-                      <span className="font-bold text-[#a8a8a8]">
-                        Tech Stack:
-                      </span>{" "}
-                      Next.js 14, Typescript, Firebase, Stripe, D3.js
+                      Tech Stack: Next.js 14, Typescript, Firebase, Stripe,
+                      D3.js
                     </p>
                     <ul className="list-disc space-y-2 pl-4">
                       <li>
@@ -589,6 +538,71 @@ export default function Home() {
                   <Link
                     className="flex w-2/3 items-center justify-center"
                     href="https://github.com/Fortivera/Recipe_webapp"
+                    target="_blank"
+                  >
+                    <Button
+                      type="button"
+                      className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
+                    >
+                      <Image
+                        src="/githublight.svg"
+                        alt={"GitHub"}
+                        width={24}
+                        height={24}
+                      />
+                    </Button>
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+          <div className="flex flex-col">
+            <Card
+              className={`relative rounded-lg border border-[#60647872] bg-[#9d94e9] bg-opacity-10 bg-gradient-to-b  from-[#35374366] to-[#24212b65] p-6 hover:border-[#21222972] hover:bg-[#24242779]`}
+            >
+              <CardHeader className="p-0 pb-4">
+                <CardTitle className="text-lg font-semibold text-[#D1D1D2] ">
+                  Joyous Light Candles
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="p-0 text-[#8b8f8f]">
+                <div className="text-sm">
+                  <div className="flex max-h-[25rem] flex-col space-y-5 overflow-y-auto">
+                    <p>
+                      Tech Stack: Typescript, C#, Next.js 14, Azure, D3.js, SQL
+                    </p>
+                    <ul className="list-disc space-y-2 pl-4">
+                      <li>
+                        A modular real estate solution that simplifies property
+                        management
+                      </li>
+                      <li>
+                        Designed to integrate data analytics and visualization
+                        capabilities within a single platform
+                      </li>
+                      <li>
+                        Scalable and user-friendly, suitable for property owners
+                        at all experience levels
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="mx-auto flex w-full flex-row items-center justify-center space-x-5 pt-8 hover:bg-none">
+                  <Link
+                    className="flex w-2/3 items-center justify-center"
+                    href="https://yourestate.vercel.app/"
+                    target="_blank"
+                  >
+                    <Button
+                      type="button"
+                      className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
+                    >
+                      <p>Visit</p>
+                    </Button>
+                  </Link>
+                  <Link
+                    className="flex w-2/3 items-center justify-center"
+                    href="https://github.com/Fortivera/yourestate"
                     target="_blank"
                   >
                     <Button

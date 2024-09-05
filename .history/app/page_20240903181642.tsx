@@ -274,6 +274,37 @@ export default function Home() {
                   </Button>
                 </Link>
               </div>
+              <div className="mx-auto flex w-full flex-row items-center justify-center space-x-5 pt-8 hover:bg-none">
+                <Link
+                  className="flex w-[38%] items-center justify-center"
+                  href="https://www.joyouslightcandles.ca/"
+                  target="_blank"
+                >
+                  <Button
+                    type="button"
+                    className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
+                  >
+                    <p>Visit</p>
+                  </Button>
+                </Link>
+                <Link
+                  className="flex w-[38%] items-center justify-center"
+                  href="https://github.com/Fortivera/Recipe_webapp"
+                  target="_blank"
+                >
+                  <Button
+                    type="button"
+                    className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
+                  >
+                    <Image
+                      src="/githublight.svg"
+                      alt={"GitHub"}
+                      width={24}
+                      height={24}
+                    />
+                  </Button>
+                </Link>
+              </div>
             </Card>
           </div>
           <div className="flex flex-col-reverse xl:flex-row xl:space-x-10 xl:space-y-0">
@@ -314,10 +345,10 @@ export default function Home() {
                   </div>
                 </div>
               </CardContent>
-              <div className="mx-auto flex w-full flex-row items-center justify-center space-x-5 pt-8 hover:bg-none">
+              <div className="mx-auto flex w-full items-center justify-center pt-8 hover:bg-none">
                 <Link
-                  className="flex w-[38%] items-center justify-center"
-                  href="https://justcook.fly.dev"
+                  className="flex w-2/3 items-center justify-center"
+                  href="https://www.graphalytics.co/"
                   target="_blank"
                 >
                   <Button
@@ -325,23 +356,6 @@ export default function Home() {
                     className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
                   >
                     <p>Visit</p>
-                  </Button>
-                </Link>
-                <Link
-                  className="flex w-[38%] items-center justify-center"
-                  href="https://github.com/Fortivera/Recipe_webapp"
-                  target="_blank"
-                >
-                  <Button
-                    type="button"
-                    className="w-full bg-[#454166] shadow-lg hover:bg-[#454166]"
-                  >
-                    <Image
-                      src="/githublight.svg"
-                      alt={"GitHub"}
-                      width={24}
-                      height={24}
-                    />
                   </Button>
                 </Link>
               </div>

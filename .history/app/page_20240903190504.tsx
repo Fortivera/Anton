@@ -46,6 +46,9 @@ export default function Home() {
             </p>
           </div>
         </section>
+        <span className="flex flex-col items-center justify-center bg-gradient-to-b from-[#ffffff] to-[#cccccc] bg-clip-text pb-5 pt-5 text-center text-5xl font-medium text-transparent sm:flex-row sm:pt-10">
+          My work:
+        </span>
         {/* Desktop view */}
         <section
           className="hidden grid-cols-1 justify-items-center gap-24 py-12 sm:grid "
